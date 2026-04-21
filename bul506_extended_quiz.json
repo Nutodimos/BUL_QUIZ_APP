@@ -1,0 +1,703 @@
+[
+  {
+    "id": 53,
+    "question": "Engineering company Ltd may terminate her employment contract because of all the following except one",
+    "options": [
+      "Notice",
+      "Insubordination",
+      "Lapse of time",
+      "dishonesty"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An employment contract can be terminated for reasons such as insubordination, lapse of time, and dishonesty — these are all causes for termination. 'Notice' is not a cause for termination in the same sense — giving notice is a method/procedure of termination, not a ground. Insubordination, lapse of time, and dishonesty are substantive grounds that justify termination."
+  },
+  {
+    "id": 54,
+    "question": "One of the remedies for illegal termination of employee's contract in an Engineering company is",
+    "options": [
+      "damages",
+      "damage",
+      "suing",
+      "Reporting to Council of Engineers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "When an employee's contract is illegally terminated, the primary legal remedy is 'damages' — monetary compensation awarded by the court. Note the distinction: 'damages' (plural) refers to the monetary award, while 'damage' (singular) refers to harm or loss suffered. 'Suing' is the process, not the remedy itself."
+  },
+  {
+    "id": 55,
+    "question": "Employer must provide work in the following contract of employment",
+    "options": [
+      "Exhibition of Skill",
+      "Contract of necessity",
+      "contract of acquisition",
+      "Transfer of skill and necessity"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In an exhibition of skill contract, the employer is obligated to provide work because the employee needs to demonstrate and maintain their skills. If work is not provided, the employee's skills may deteriorate, defeating the purpose of the contract. This is an exception to the general rule established in Turner v. Sandom."
+  },
+  {
+    "id": 56,
+    "question": "Employer is not oblige to provide work for his employee as it was held in the case of",
+    "options": [
+      "Turner v. Sandom",
+      "Sandom v. Turner",
+      "Turner v. Cooker",
+      "Cooker v. Sandom"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The case of Turner v. Sandom established the general principle that an employer is not obliged to provide work for the employee — the employer only needs to pay the agreed wages. However, there are exceptions, such as contracts involving exhibition of skill."
+  },
+  {
+    "id": 57,
+    "question": "It is not mandatory for the employer to give reference to any of his employee, however, if he must give, it must be honest otherwise the employee may sue for",
+    "options": [
+      "defamation",
+      "damages",
+      "damage",
+      "compensation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "While an employer is not required to give a reference, if they choose to do so, it must be honest and accurate. If an employer gives a dishonest or false reference, the employee can sue for defamation — a tort involving making false statements that damage someone's reputation."
+  },
+  {
+    "id": 58,
+    "question": "One of the defences available to engineering company, employer where she breached her duty to employee is",
+    "options": [
+      "Remoteness of damage",
+      "damages of remoteness",
+      "Remoteness of damages",
+      "Remoteness of compensation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Remoteness of damage is a legal defence where the defendant argues that the damage suffered was too remote or unforeseeable to be compensated. If the damage is not a direct or foreseeable consequence of the breach, the employer may not be held liable for it."
+  },
+  {
+    "id": 59,
+    "question": "Duty to provide safe place of work is tantamount to",
+    "options": [
+      "duty of care",
+      "duty of employee",
+      "Collective duty of employee and employer",
+      "employment duty"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The duty to provide a safe place of work is a manifestation of the duty of care. As stated in the lecture notes, an engineering company owes her employees a duty of care to provide adequate equipment and a safe system of work. This falls under the broader tort of negligence principles established in Donoghue v. Stevenson."
+  },
+  {
+    "id": 60,
+    "question": "The latin word used to describe consent in a contract of employment is",
+    "options": [
+      "Consensus ad idem",
+      "Consciouness ade dim",
+      "Consent requree",
+      "ad idem consen sus"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Consensus ad idem is the Latin term meaning 'meeting of the minds.' It refers to the mutual agreement or consent between parties entering into a contract. Both parties must have the same understanding of the terms and conditions of the contract for it to be valid."
+  },
+  {
+    "id": 61,
+    "question": "The general function of COREN is",
+    "options": [
+      "to regulate engineering work and practices in Nigeria",
+      "To punish the engineers",
+      "to prosecute the engineers",
+      "Measure the standard engineering practices in Nigeria"
+    ],
+    "correctAnswer": 0,
+    "explanation": "COREN (Council for the Regulation of Engineering in Nigeria) has the general function of regulating engineering work and practices in Nigeria. The COREN Act is specifically mentioned in the lecture notes as an example of Nigerian statutes applicable to engineering practices. Its role is regulatory, not punitive."
+  },
+  {
+    "id": 62,
+    "question": "Induction of registered engineering technicians is contained in",
+    "options": [
+      "S. 2(g) Coren Act",
+      "sec. 2 Coren Act",
+      "S. 2(3) Coren Act",
+      "S.3 (2) Coren Act"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Section 2(g) of the COREN Act specifically deals with the induction of registered engineering technicians. The COREN Act provides the legal framework for the registration and regulation of different categories of engineering professionals in Nigeria."
+  },
+  {
+    "id": 63,
+    "question": "Consideration must move",
+    "options": [
+      "from promisee to promisor",
+      "Promisor to promisee",
+      "Oferee to offerror",
+      "Acceptor to Acceptee"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is a fundamental rule of consideration in contract law: consideration must move from the promisee (the person to whom the promise is made) to the promisor (the person making the promise). The promisee must provide something of value in return for the promisor's promise."
+  },
+  {
+    "id": 64,
+    "question": "Carlil v. Carbolic depicts",
+    "options": [
+      "Unilateral contract",
+      "Multilateral Contract",
+      "a & b",
+      "None"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The case of Carlill v. Carbolic Smoke Ball Company is the landmark case depicting a unilateral contract. In a unilateral contract, one party makes a promise in exchange for the performance of an act by another. The Carbolic company promised £100 to anyone who used their product and still contracted influenza."
+  },
+  {
+    "id": 65,
+    "question": "……contract on one hand is a contract whereby parties exchange promises to one another",
+    "options": [
+      "Bilateral",
+      "Unilateral",
+      "Multilateral",
+      "Execution"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A bilateral contract is one where both parties exchange promises to each other. Both parties are bound to perform their respective obligations. This is distinguished from a unilateral contract (where only one party makes a promise in exchange for an act) as seen in Carlill v. Carbolic."
+  },
+  {
+    "id": 66,
+    "question": "……….contract is the one where it is only one party that promise to do an act in exchange for another promise",
+    "options": [
+      "Unilateral",
+      "Multilateral",
+      "Bilateral",
+      "a & b"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A unilateral contract is one where only one party makes a promise in exchange for an act by the other party. The classic example is Carlill v. Carbolic, where the company promised payment to anyone who performed the act of using their product. The other party is not bound to perform but can earn the reward by doing so."
+  },
+  {
+    "id": 67,
+    "question": "…..is an invitation to make an offer",
+    "options": [
+      "Invitation to treat",
+      "Invitation to offer",
+      "inviting acceptance",
+      "Offer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An invitation to treat is an invitation to make an offer — it is not an offer itself. It merely indicates a willingness to negotiate or receive offers. Common examples include goods displayed in shop windows (as in Pharmaceutical Society of Great Britain v. Boots Cash Chemist) and advertisements."
+  },
+  {
+    "id": 68,
+    "question": "……an expression of readiness to contract",
+    "options": [
+      "Offer",
+      "Offeror",
+      "Offeree",
+      "Acceptance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An offer is an expression of readiness or willingness to contract on certain terms. It is made with the intention that it will become binding once accepted by the offeree. An offer must be complete, final, and clear to be valid."
+  },
+  {
+    "id": 69,
+    "question": "Display of engineering product or goods in a shop window is illustrated in the case of",
+    "options": [
+      "Pharmaceutical Society v. Great Britain",
+      "Britain v Boot",
+      "Cash v Boot",
+      "Pharmaceutical co. v. Britain Society"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The case of Pharmaceutical Society of Great Britain v. Boots Cash Chemist established that the display of goods in a shop window or on shelves constitutes an invitation to treat, not an offer. The customer makes the offer when they present the goods at the counter, and the shopkeeper can accept or reject."
+  },
+  {
+    "id": 70,
+    "question": "Illiterate is bound",
+    "options": [
+      "Contract of necessity",
+      "Invalid",
+      "Valid and Void Contract",
+      "Voidable Contract"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An illiterate person is bound by contracts of necessity — these are contracts for essential goods and services that the person needs. While illiteracy may affect the capacity to understand complex contracts, contracts of necessity are enforceable because they serve the basic needs of the individual."
+  },
+  {
+    "id": 71,
+    "question": "Acceptance may be conditional",
+    "options": [
+      "FALSE",
+      "TRUE"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Acceptance must NOT be conditional. As stated in the lecture notes, acceptance must be direct and go straight to the terms of the offer. A conditional acceptance is not a valid acceptance — it amounts to a counter-offer which destroys the original offer. Acceptance must be absolute and unconditional."
+  },
+  {
+    "id": 72,
+    "question": "Customary law must repugnant to constitution",
+    "options": [
+      "FALSE",
+      "TRUE"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is FALSE. The lecture notes state that for customary law to be valid, it must NOT be repugnant to natural justice, equity, and good conscience (Lewis v. Bankole). It must not be incompatible with any law for the time being (Adesubokun v. Yinusa). So customary law must NOT be repugnant to the constitution."
+  },
+  {
+    "id": 73,
+    "question": "Which of these is not criteria for contract formation",
+    "options": [
+      "Law relations",
+      "Offer & Acceptance",
+      "Consideration",
+      "Contractual Capacity"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Law relations' is not a recognized criterion for contract formation. The valid criteria are: (1) Offer and Acceptance, (2) Consideration, (3) Intention to create legal relations, and (4) Contractual Capacity. Note that 'intention to create legal relations' is the proper term, not merely 'law relations.'"
+  },
+  {
+    "id": 74,
+    "question": "Expression from offeree stating that he accept the statement of the offer from the offeror is",
+    "options": [
+      "acceptance",
+      "offer",
+      "consideration",
+      "invitation to treat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Acceptance is the expression from the offeree (the person receiving the offer) indicating agreement to the terms of the offer made by the offeror. Acceptance must be unconditional, communicated to the offeror, and must correspond exactly with the terms of the offer."
+  },
+  {
+    "id": 75,
+    "question": "Importation of Communication equipment is ........contract",
+    "options": [
+      "illegal contract",
+      "a void",
+      "voidable",
+      "contract under seal"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The importation of communication equipment without proper authorization is classified as an illegal contract. An illegal contract is one that involves activities prohibited by law. Such contracts are void ab initio (from the beginning) and unenforceable by the courts."
+  },
+  {
+    "id": 76,
+    "question": "All except..........is not a characteristics of an offer",
+    "options": [
+      "synonymous to invitation to treat",
+      "It must be complete and final",
+      "it must be clear",
+      "it is a declaration to enter negotiation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An offer is NOT synonymous with an invitation to treat — they are fundamentally different concepts. An offer is a definite expression of willingness to contract, while an invitation to treat is merely an invitation for others to make offers. The characteristics of a valid offer include: being complete and final, clear, and being a declaration of readiness to enter negotiation."
+  },
+  {
+    "id": 77,
+    "question": "An offer becomes effective",
+    "options": [
+      "when it reaches the offeree",
+      "by post",
+      "before it reaches the acceptance",
+      "when it reaches the offeror"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An offer becomes effective when it reaches the offeree (the person to whom the offer is made). Until the offeree receives and becomes aware of the offer, it has no legal effect. The offeree cannot accept an offer they do not know about."
+  },
+  {
+    "id": 78,
+    "question": "An offer accept by anyone could be seen as a contract",
+    "options": [
+      "NO",
+      "YES"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Not just anyone can accept an offer. Generally, only the person (or class of persons) to whom the offer is directed can accept it. An offer made to a specific person can only be accepted by that person. The exception is offers made to the whole world (as in Carlill v. Carbolic), which can be accepted by anyone who performs the required act."
+  },
+  {
+    "id": 79,
+    "question": "A valid acceptance need to be",
+    "options": [
+      "unconditional and unequivocal",
+      "conditional",
+      "unconditional",
+      "conditional and equivocal"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A valid acceptance must be both unconditional AND unequivocal. It must be absolute, without any conditions or ambiguity. The acceptance must mirror the exact terms of the offer (mirror image rule). While 'unconditional' alone is partially correct, the most complete answer includes both 'unconditional and unequivocal.'"
+  },
+  {
+    "id": 80,
+    "question": "Another name for formal contract is",
+    "options": [
+      "speciality",
+      "company",
+      "implied",
+      "expressed"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A formal contract is also known as a 'speciality' or 'contract under seal.' It is a contract that must be signed, sealed, and delivered. This is in contrast to simple or informal contracts which do not require such formalities."
+  },
+  {
+    "id": 81,
+    "question": "A promise made by one party in exchange for an act of other party",
+    "options": [
+      "executed",
+      "executory",
+      "expressed",
+      "simple"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An executed consideration is where one party has performed their part of the bargain (an act) in exchange for a promise from the other party. This is typical of unilateral contracts — one side has executed (performed) their obligation while the other's obligation is yet to be fulfilled."
+  },
+  {
+    "id": 82,
+    "question": "An offer would terminate under any of the following except",
+    "options": [
+      "by non acceptance of the offer within the time prescribed for the offer",
+      "on the rejection of the offer",
+      "on the death of either of offeror or offeree",
+      "by non acceptance of the offer within the time prescribed for the acceptance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An offer terminates by: rejection, death of either party, lapse of time prescribed for acceptance, revocation, or counter-offer. The phrase 'time prescribed for the offer' is incorrect — the correct concept is 'time prescribed for acceptance.' An offer lapses if not accepted within the time specified for acceptance, not for the offer."
+  },
+  {
+    "id": 83,
+    "question": "Counter offer",
+    "options": [
+      "none of the above",
+      "validate the original offer",
+      "legalizes the original offer",
+      "legalizes and validate the original offer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A counter-offer does NOT validate or legalize the original offer — instead, it destroys the original offer entirely. When a counter-offer is made, the original offer ceases to exist and cannot be subsequently accepted. This was illustrated in Hyde v. Wrench. Therefore, 'none of the above' is correct."
+  },
+  {
+    "id": 84,
+    "question": "Consideration must move from promisor to promisee",
+    "options": [
+      "NO",
+      "YES"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This statement is incorrect (NO). Consideration must move from the PROMISEE to the PROMISOR, not from the promisor to the promisee. The promisee (the person to whom the promise is made) must provide something of value to the promisor (the person making the promise) in exchange for the promise."
+  },
+  {
+    "id": 85,
+    "question": "An offer may be revoke before",
+    "options": [
+      "it being accepted",
+      "after it being accepted",
+      "before and after it being accepted",
+      "invitation to treat"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An offer may be revoked (withdrawn) at any time BEFORE it is accepted. Once an offer has been accepted, a binding contract is formed and the offer can no longer be revoked. The revocation must be communicated to the offeree before acceptance takes effect."
+  },
+  {
+    "id": 86,
+    "question": "All agreements are contract but not all contracts are agreements",
+    "options": [
+      "NO",
+      "YES"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This statement is FALSE (NO). The correct principle is the reverse: 'All contracts are agreements, but not all agreements are contracts.' A contract requires specific legal elements (offer, acceptance, consideration, intention to create legal relations, and capacity). An agreement becomes a contract only when it meets all these legal requirements."
+  },
+  {
+    "id": 87,
+    "question": "All legal agreements are contract but not all legal contracts are agreements",
+    "options": [
+      "NO",
+      "YES",
+      "CONFUSED"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This statement is incorrect (NO). The correct principle is: 'All contracts are agreements, but not all agreements are contracts.' A legal agreement that satisfies all elements of a contract (offer, acceptance, consideration, capacity, and intention to create legal relations) becomes a contract. But the reverse is not true."
+  },
+  {
+    "id": 88,
+    "question": "case of Pharmaceutical Society of Great Britain V Boots Cash Chemist describes a/an",
+    "options": [
+      "invitation to treat",
+      "offer",
+      "acceptance",
+      "counter offer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The case of Pharmaceutical Society of Great Britain v. Boots Cash Chemist is the landmark case that established that goods displayed on shop shelves constitute an invitation to treat, not an offer. The customer makes the offer by presenting the goods at the cashier, and the cashier may accept or reject."
+  },
+  {
+    "id": 89,
+    "question": "Lagunjo V Abake case is an example of a/an",
+    "options": [
+      "capacity to contract",
+      "acceptance",
+      "contract to marry",
+      "counter offer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The case of Lagunjo v. Abake is a Nigerian case dealing with the issue of capacity to contract. It illustrates the legal requirements and limitations on who has the legal capacity to enter into binding contracts under Nigerian law."
+  },
+  {
+    "id": 90,
+    "question": "Who among these has no capacity to contract",
+    "options": [
+      "All of the above",
+      "Allien",
+      "infant & married woman",
+      "illiterate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Under Nigerian law, several categories of persons have limited or no capacity to contract. These include aliens (non-citizens in certain transactions), infants (persons under 18 — S. 20 CAMA), married women (under certain customary laws), and illiterates (who may not understand the terms). All the listed categories have restricted contractual capacity."
+  },
+  {
+    "id": 91,
+    "question": "Application of force to the person is",
+    "options": [
+      "battery",
+      "assault",
+      "assault and battery",
+      "all of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Battery is defined as the intentional application of force on the body of another person. As stated in the lecture notes, examples include A beating B, or A kissing B without consent. Even projection of light on a person or smoking on someone can constitute battery. This is distinct from assault, which is merely putting fear of battery into someone's mind."
+  },
+  {
+    "id": 92,
+    "question": "Price paid by one party for the act or promise of other party is",
+    "options": [
+      "consideration",
+      "offer",
+      "acceptance",
+      "capacity"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Consideration is the price paid by one party for the promise or act of another. The lecture notes state that consideration is 'the price at which the promise of an engineer is bought.' It must be sufficient (though not necessarily adequate), must not be past, and must move from the promisee to the promisor."
+  },
+  {
+    "id": 93,
+    "question": "Two types of consideration are",
+    "options": [
+      "executed and executory",
+      "implied and expressed",
+      "bilateral and unilateral",
+      "none"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The two main types of consideration are executed and executory. Executed consideration is where one party has already performed their part of the bargain (an act in exchange for a promise). Executory consideration is where both parties' obligations are yet to be performed (exchange of promises). 'Implied and expressed' relate to types of contracts, not consideration."
+  },
+  {
+    "id": 94,
+    "question": "The law that regulate the internal affairs of the company is ----- company",
+    "options": [
+      "article of association",
+      "memorandum of association",
+      "memorandum of directors of company",
+      "share and Debentures"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Article of Association is the constitution of a company governing the internal affairs — specifically the relationship between the company and her employees (S. 33 CAMA). The Memorandum of Association governs the external relationship between the company and outsiders. When there is conflict between the two, the Memorandum prevails."
+  },
+  {
+    "id": 95,
+    "question": "Element of contract is of",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "There are 4 essential elements of a valid contract: (1) Offer and Acceptance, (2) Consideration, (3) Intention to create legal relations, and (4) Capacity. All four elements must be present for a contract to be valid and enforceable."
+  },
+  {
+    "id": 96,
+    "question": "Transfer of Land without the consent of the head of the family is ..........contract",
+    "options": [
+      "void",
+      "voidable",
+      "illegal",
+      "implied"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Under Nigerian customary law, family land is held collectively and any transfer requires the consent of the head of the family. A transfer of land without such consent is void — meaning it has no legal effect from the beginning and cannot be enforced."
+  },
+  {
+    "id": 97,
+    "question": "An offer may come to an end by all except",
+    "options": [
+      "consideration",
+      "Lapse",
+      "revocation",
+      "rejection"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An offer may come to an end by: lapse of time, revocation (withdrawal by the offeror), rejection by the offeree, counter-offer, or death of a party. Consideration is an element required to form a valid contract — it does not bring an offer to an end."
+  },
+  {
+    "id": 98,
+    "question": "Where a counter offer is accepted then its terms and not the terms of the original offer becomes the terms of the contract",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is TRUE. When a counter-offer is made, it destroys the original offer. If the counter-offer is then accepted, the terms of the counter-offer (not the original offer) become the terms of the contract. This principle was illustrated in Hyde v. Wrench."
+  },
+  {
+    "id": 99,
+    "question": "Hyde v Wrench, On June 6 A offered B a farm for #250000; B made a counter offer of #150000. On 27 June, A rejected the counter offer. On 29 June B made a purported acceptance of the offer of June 6. Would there be a contract?",
+    "options": [
+      "NO",
+      "YES"
+    ],
+    "correctAnswer": 0,
+    "explanation": "NO. In Hyde v. Wrench, B's counter-offer of #150,000 destroyed the original offer of #250,000. Once destroyed, the original offer cannot be revived by a later purported acceptance. B's attempt to accept the original offer on June 29 was ineffective because that offer no longer existed after the counter-offer was made."
+  },
+  {
+    "id": 100,
+    "question": "The principle of Unilateral Contract was laid down in................when made to the public",
+    "options": [
+      "the case of Carlil v Carbolic Smoke ball and co",
+      "the case of Kalil v Carbolic Smoke ball",
+      "the case of Payne v cave",
+      "the case of Carlil v Kabolic smoke Ball and Co"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The principle of unilateral contract was established in the landmark case of Carlill v. Carbolic Smoke Ball Company. This case established that an offer can be made to the whole world, and that performing the conditions of the offer constitutes valid acceptance in a unilateral contract."
+  },
+  {
+    "id": 101,
+    "question": "To kiss someone without his/her consent is",
+    "options": [
+      "battery",
+      "assault",
+      "assault and battery",
+      "all of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The lecture notes specifically state that battery is the intentional application of force on the body of another, giving the example: 'A kisses B without consent.' Kissing without consent involves physical contact (application of force), making it battery, not merely assault (which is just putting fear into someone's mind)."
+  },
+  {
+    "id": 102,
+    "question": "All but one of the following are the document required for the incorporation of company",
+    "options": [
+      "none",
+      "list of directors",
+      "memorandum of association",
+      "total share declaration"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The documents required for the incorporation of a company include the Memorandum of Association, Articles of Association, and other statutory forms. Since the question asks 'all but one,' and the options list directors, memorandum, and share declaration as required documents, the answer 'none' likely refers to none of the listed items being the exception — all listed items are actually required."
+  },
+  {
+    "id": 103,
+    "question": "All but one of these types of contract is enforceable against an infant",
+    "options": [
+      "contract for necessaries and services",
+      "contract that have element of a valid contract",
+      "contract of employment",
+      "contract willingly entered by an infant"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Contracts for necessaries (essential goods and services) are enforceable against an infant (minor). The lecture notes indicate that beneficial contracts and apprenticeship contracts are valid for minors. A contract for necessaries and services is the most clearly enforceable type against a minor because it serves their basic needs."
+  },
+  {
+    "id": 104,
+    "question": "An example of contract under seal is",
+    "options": [
+      "none of the above",
+      "Multilateral contract",
+      "Ordinary contract",
+      "Unilateral contract"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A contract under seal (formal contract/speciality) must be signed, sealed, and delivered. Multilateral contracts, ordinary contracts, and unilateral contracts are classifications based on the nature of obligations, not on formality. None of the listed options (multilateral, ordinary, unilateral) are specifically examples of contracts under seal."
+  },
+  {
+    "id": 105,
+    "question": "Which of these rules is not correct",
+    "options": [
+      "Consideration need not be inadequate",
+      "Consideration must not be past",
+      "Consideration must not be illegal",
+      "Consideration not be vague"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The correct rule is 'Consideration need not be adequate but must be sufficient.' The statement 'Consideration need not be inadequate' is a confusing double negative that doesn't match the established legal principle. The other rules are correct: consideration must not be past, must not be illegal, and must not be vague."
+  },
+  {
+    "id": 106,
+    "question": "An act made by one party in exchange for a promise of other party",
+    "options": [
+      "executed",
+      "executory",
+      "expressed",
+      "simple"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Executed consideration occurs when one party has already performed an act in exchange for a promise from the other party. This is typical in unilateral contracts. Executory consideration, by contrast, involves a promise in exchange for a promise, where neither party has yet performed."
+  },
+  {
+    "id": 107,
+    "question": "Before there could be a valid contract, the parties to the agreement must have ----- to enter into that type of contract",
+    "options": [
+      "capacity",
+      "offer",
+      "intention to create legal relation",
+      "acceptance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Capacity refers to the legal ability of parties to enter into a contract. As stated in the lecture notes, certain persons lack capacity: those below 18 years of age, persons of unsound mind, undischarged bankrupts, and persons disqualified from being directors (S. 20 CAMA). Without capacity, a contract cannot be valid."
+  },
+  {
+    "id": 108,
+    "question": "Past event which used as back up in the present is",
+    "options": [
+      "judicial precedence",
+      "Evidence",
+      "article",
+      "none of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Judicial precedent is defined in the lecture notes as a source of engineering law where past court decisions are used to inform present cases. It is referred to as 'Judge-made law' or 'case law.' Courts rely on previous decisions (precedents) as authority when deciding current cases with similar facts."
+  },
+  {
+    "id": 109,
+    "question": "------ does not determine the validity of customary law",
+    "options": [
+      "inequality test",
+      "repugnancy test",
+      "incompatibility test",
+      "inconsistency test"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The validity of customary law is determined by: (1) the repugnancy test — it must not be repugnant to natural justice (Lewis v. Bankole), (2) the incompatibility test — it must not be incompatible with any existing law (Adesubokun v. Yinusa), and (3) it must not be contrary to public policy. The 'inequality test' is NOT one of the recognized tests for determining the validity of customary law."
+  },
+  {
+    "id": 110,
+    "question": "To point a gun at someone and to slap someone is",
+    "options": [
+      "assault and battery",
+      "battery",
+      "assault",
+      "all of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This involves two distinct torts: pointing a gun at someone constitutes ASSAULT (putting fear of battery into someone's mind), while slapping someone constitutes BATTERY (intentional application of force on the body). Together, these acts constitute both assault and battery."
+  },
+  {
+    "id": 111,
+    "question": "A moral promise is a valid consideration",
+    "options": [
+      "NO",
+      "YES"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A moral promise is NOT valid consideration in law. Consideration must have some legal value — it must be 'sufficient' even if not adequate. A purely moral obligation (such as a feeling of gratitude or a sense of duty) cannot serve as consideration because it lacks legal enforceability. Consideration must be something of recognizable legal value."
+  },
+  {
+    "id": 112,
+    "question": "Insane and drunken persons are bound to pay a reasonable price for necessaries according to the same rules that apply to infants",
+    "options": [
+      "YES",
+      "NO"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Insane and drunken persons, like infants (minors), are bound to pay a reasonable price for necessaries — goods and services essential for their sustenance and wellbeing. This is because the law protects suppliers who provide essential items to persons who lack full contractual capacity, while also protecting the vulnerable individuals from exploitation."
+  }
+]

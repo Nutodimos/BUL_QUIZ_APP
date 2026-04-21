@@ -1,0 +1,1182 @@
+[
+  {
+    "id": 1,
+    "question": "The essence of Engineering law is to",
+    "options": [
+      "guide the activities of Engineers in engineering activities",
+      "guide Engineer in all his endeavour",
+      "protect engineers across the world",
+      "guide the activities of humanbeing in the society"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "question": "One of the characteristics of customary law is",
+    "options": [
+      "Mirror of acceptable usage",
+      "meet repulganancy test",
+      "meet consistency test",
+      "all of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "question": "The enforcement of which that may be backed by sanction is",
+    "options": [
+      "Law",
+      "Custom",
+      "Morality",
+      "custom and morality"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 4,
+    "question": "Law passed by the Nigeria legislators on the ways and manner engineering business should be conducted is",
+    "options": [
+      "COREN Act",
+      "Engineering principles",
+      "Engineering law",
+      "Common law"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "question": "......can be defined as the rules and regulations guiding the conduct of engineers in the discharge of their duties backed by sanction",
+    "options": [
+      "Engineering law",
+      "common law of engineering",
+      "Equitable principle of engineering",
+      "Acts of national assembly"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "question": "The major source of Engineering law in Nigeria is",
+    "options": [
+      "Nigeria Constitution, 1999 as amended",
+      "National Assembly law, 1999 as amended",
+      "Nigeria Constitution, 1990 as amended",
+      "Nigeria Constitution, 1989 as amended"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 7,
+    "question": "An example of Nigerian Statutes applicable to Engineering practices is",
+    "options": [
+      "COREN Act",
+      "Common law",
+      "Equity",
+      "Received English law"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "question": "One of the primary sources of Engineering law is",
+    "options": [
+      "Received English law",
+      "subsidiary legislation",
+      "Local government bye-law",
+      "State engineering law"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "question": "Engineering law made by the central legislature before 1st october, 1954 is",
+    "options": [
+      "Ordinance",
+      "Act",
+      "Edict",
+      "Bye-law"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "question": "Engineering law made by the state legislature during the military era is",
+    "options": [
+      "Edict",
+      "ordinance",
+      "Bye-law",
+      "Act"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "question": "Law made by the Federal military government to regulate engineering business in Nigeria is called",
+    "options": [
+      "Decree",
+      "Bye-law",
+      "Edict",
+      "Act"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "question": "One of the characteristics of custom as applicable to engineering business in Nigeria is",
+    "options": [
+      "unwritten",
+      "unknown to custom",
+      "unknown to law",
+      "need not be proved"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 13,
+    "question": "An engineer can prove custom of his profession by any of the following:",
+    "options": [
+      "Calling president of COREN",
+      "calling legal practitioner",
+      "by written statement",
+      "by tendering constitution 1999"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "question": "Engineering law that is against public assessment would be accepted as standard of behaviour:",
+    "options": [
+      "No",
+      "yes"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 15,
+    "question": "The principle that customary law must be a mirror of acceptable usage is decided in the case of",
+    "options": [
+      "Owonyi v. omotosho",
+      "Dampamg v Sale",
+      "Ada v adeola",
+      "omotosho v owonyi"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "question": "Judgment of the court whereby engineering principle is being generated is called",
+    "options": [
+      "Precedent",
+      "Authority",
+      "judgement",
+      "Statement"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "question": "A court where its decision binds all other courts in Nigeria is",
+    "options": [
+      "Supreme court",
+      "court of Appeal",
+      "Shariah court",
+      "High court"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "question": "One of the court of record is",
+    "options": [
+      "High court of kwara state",
+      "Magistrate court of kwara state",
+      "Upper Area court",
+      "Area court",
+      "None of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "question": "Court of Appeal and High Court are court of coordinate jurisdiction",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "question": "State High and Federal High court are courts of coordinate jurisdiction",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "question": "Federal High court and National Industrial court are court of coordinate jurisdiction",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 22,
+    "question": "Shariah court of Appeal and Customary court of Appeal are not courts of coordinate jurisdiction",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 23,
+    "question": "Magistrate, Upper or Area and District courts are courts of Record",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 24,
+    "question": "A court is a court of record because it is not mentioned in the constitution",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 25,
+    "question": "The decision of court of Appeal on Engineering matter binds the Supreme court",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 26,
+    "question": "Tortious liability of an engineer may be inform of all of the following except",
+    "options": [
+      "partial false imprisonment",
+      "Assault",
+      "Negligent",
+      "Battery"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 27,
+    "question": "An engineer putting fear into the mind of his colleagues that a battery is about to be committed is responsible for the tort of",
+    "options": [
+      "Assault",
+      "Battery",
+      "Battery and Assault",
+      "Assault or battery"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 28,
+    "question": "Engineer Ajadi approached Engineer Oloje menacingly. Engineer Ajadi has committed the tort of:",
+    "options": [
+      "Assault",
+      "Battery",
+      "False prison",
+      "none of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "question": "Projection of torch light on the body of another is",
+    "options": [
+      "Battery",
+      "Battery and Assault",
+      "Assault and Battery",
+      "All of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 30,
+    "question": "Intentional application of force into the body of another is simply refer to as",
+    "options": [
+      "Battery",
+      "Assault",
+      "Assault and Battery",
+      "None of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 31,
+    "question": "In the case of ........... the court held that in false imprisonment, restraint must be complete and total",
+    "options": [
+      "Bird v. jone",
+      "Jone v Bird",
+      "Bird jone v Jone Bird",
+      "Bird v.Bird"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 32,
+    "question": "Volunti non fit injuria is a defence available to trespass to person",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 33,
+    "question": "..............is an intentional or unintentional act of bringing offensive object into the property of another",
+    "options": [
+      "Strict liability",
+      "Negligence",
+      "Vicarious liability",
+      "Tortious liability"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 34,
+    "question": "Res ipsa loquitor is interpreted to mean",
+    "options": [
+      "Thing speaks for itself",
+      "many things speak for them selves",
+      "all of the above",
+      "none of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 35,
+    "question": "An Engineer who wants to proof the tort of negligence must prove all the following except",
+    "options": [
+      "Consent",
+      "Duty of care",
+      "Breach of duty of care",
+      "Damage"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 36,
+    "question": "All but one is a locus classical case on the tort of negligence",
+    "options": [
+      "Donoghue v stevenson",
+      "Aigoro v, Anabuwa",
+      "Bird v jone",
+      "jone v Bird"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 37,
+    "question": "All but one is not an element of engineering contract",
+    "options": [
+      "creation of contractual relationship",
+      "Offer",
+      "intention to create legal relation",
+      "capacity"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 38,
+    "question": "An invitation to make an offer is..............",
+    "options": [
+      "invitation to treat",
+      "offer",
+      "invitation to offer",
+      "invitation to accept"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 39,
+    "question": "All but one is a form of contract that must be signed sealed and delivered",
+    "options": [
+      "Formal contract",
+      "Informal contract",
+      "Former contract",
+      "Informer contract"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 40,
+    "question": "The price at which the promise of an engineer is bought is called........",
+    "options": [
+      "Consideration",
+      "market price",
+      "conditional price",
+      "All of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 41,
+    "question": "All but One is not a valid contract of a minor",
+    "options": [
+      "loan",
+      "Beneficial contract",
+      "Apprentice",
+      "all of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 42,
+    "question": "A person below the age of 17 years 11 months can validly enter into a contract",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 43,
+    "question": "A conditional acceptance is a valid acceptance",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 44,
+    "question": "An offer can be made to the wholeworld",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 45,
+    "question": "Consideration must be past",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 46,
+    "question": "Consideration need not be adequate but",
+    "options": [
+      "Sufficient",
+      "Cogent",
+      "reasonable",
+      "all of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 47,
+    "question": "Acceptance must not be communicated to the offerror",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 48,
+    "question": "Acceptance must be communicated to offeror in unilateral contract",
+    "options": [
+      "True",
+      "false"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 49,
+    "question": "Carlil v carbolic represents offer to the whole world",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 50,
+    "question": "Carlil v carbolic is case on example of unilateral contract",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 51,
+    "question": "Acceptance must be direct and go straight to the term of offer",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 52,
+    "question": "Acceptance in ignorance of offer constitutes a valid acceptance in the eyes of the law",
+    "options": [
+      "false",
+      "true"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 53,
+    "question": "Engineering company Ltd may terminate her employment contract because of all the following except one",
+    "options": [
+      "Notice",
+      "Insubordination",
+      "Lapse of time",
+      "dishonesty"
+    ],
+    "correctAnswer": 0,
+    "note": "Answer extracted from option (b) - assuming 'Notice' is the exception"
+  },
+  {
+    "id": 54,
+    "question": "One of the remedies for illegal termination of employee's contract in an Engineering company is",
+    "options": [
+      "damages",
+      "damage",
+      "suing",
+      "Reporting to Council of Engineers"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 55,
+    "question": "Employer must provide work in the following contract of employment",
+    "options": [
+      "Exhibition of Skill",
+      "Contract of necessity",
+      "contract of acquisition",
+      "Transfer of skill and necessity"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 56,
+    "question": "Employer is not oblige to provide work for his employee as it was held in the case of",
+    "options": [
+      "Turner v. Sandom",
+      "Sandom v. Turner",
+      "Turner v. Cooker",
+      "Cooker v. Sandom"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 57,
+    "question": "It is not mandatory for the employer to give reference to any of his employee, however, if he must give, it must be honest otherwise the employee may sue for",
+    "options": [
+      "defamation",
+      "damages",
+      "damage",
+      "compensation"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 58,
+    "question": "One of the defences available to engineering company, employer where she breached her duty to employee is",
+    "options": [
+      "Remoteness of damage",
+      "damages of remoteness",
+      "Remoteness of damages",
+      "Remoteness of compensation"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 59,
+    "question": "Duty to provide safe place of work is tantamount to",
+    "options": [
+      "duty of care",
+      "duty of employee",
+      "Collective duty of employee and employer",
+      "employment duty"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 60,
+    "question": "The latin word used to describe consent in a contract of employment is",
+    "options": [
+      "Consensus ad idem",
+      "Consciouness ade dim",
+      "Consent requree",
+      "ad idem consen sus"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 61,
+    "question": "The general function of COREN is",
+    "options": [
+      "to regulate engineering work and practices in Nigeria",
+      "To punish the engineers",
+      "to prosecute the engineers",
+      "Measure the standard engineering practices in Nigeria"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 62,
+    "question": "Induction of registered engineering technicians is contained in",
+    "options": [
+      "S. 2(g) Coren Act",
+      "sec. 2 Coren Act",
+      "S. 2(3) Coren Act",
+      "S.3 (2) Coren Act"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 63,
+    "question": "Consideration must move",
+    "options": [
+      "from promisee to promisor",
+      "Promisor to promisee",
+      "Oferee to offerror",
+      "Acceptor to Acceptee"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 64,
+    "question": "Carlil v. Carbolic depicts",
+    "options": [
+      "Unilateral contract",
+      "Multilateral Contract",
+      "a & b",
+      "None"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 65,
+    "question": "\u2026\u2026.contract on one hand is a contract whereby parties exchange promises to one another",
+    "options": [
+      "Bilateral",
+      "Unilateral",
+      "Multilateral",
+      "Execution"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 66,
+    "question": "\u2026\u2026\u2026.contract is the one where it is only one party that promise to do an act in exchange for another promise",
+    "options": [
+      "Unilateral",
+      "Multilateral",
+      "Bilateral",
+      "a & b"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 67,
+    "question": "\u2026..is an invitation to make an offer",
+    "options": [
+      "Invitation to treat",
+      "Invitation to offer",
+      "inviting acceptance",
+      "Offer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 68,
+    "question": "\u2026\u2026an expression of readiness to contract",
+    "options": [
+      "Offer",
+      "Offeror",
+      "Offeree",
+      "Acceptance"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 69,
+    "question": "Display of engineering product or goods in a shop window is illustrated in the case of",
+    "options": [
+      "Pharmaceutical Society v. Great Britain",
+      "Britain v Boot",
+      "Cash v Boot",
+      "Pharmaceutical co. v. Britain Society"
+    ],
+    "correctAnswer": 0,
+    "note": "PDF notes correct case is 'Pharmaceutical society of great Britain v. boots cash chemist'"
+  },
+  {
+    "id": 70,
+    "question": "Illiterate is bound",
+    "options": [
+      "Contract of necessity",
+      "Invalid",
+      "Valid and Void Contract",
+      "Voidable Contract"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 71,
+    "question": "Acceptance may be conditional",
+    "options": [
+      "FALSE",
+      "TRUE"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 72,
+    "question": "Customary law must repugnant to constitution",
+    "options": [
+      "FALSE",
+      "TRUE"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 73,
+    "question": "Which of these is not criteria for contract formation",
+    "options": [
+      "Law relations",
+      "Offer & Acceptance",
+      "Consideration",
+      "Contractual Capacity"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 74,
+    "question": "Expression from offeree stating that he accept the statement of the offer from the offeror is",
+    "options": [
+      "acceptance",
+      "offer",
+      "consideration",
+      "invitation to treat"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 75,
+    "question": "Importation of Communication equipment is ........contract",
+    "options": [
+      "illegal contract",
+      "a void",
+      "voidable",
+      "contract under seal"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 76,
+    "question": "All except..........is not a characteristics of an offer",
+    "options": [
+      "synonymous to invitation to treat",
+      "It must be complete and final",
+      "it must be clear",
+      "it is a declaration to enter negotiation"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 77,
+    "question": "An offer becomes effective",
+    "options": [
+      "when it reaches the offeree",
+      "by post",
+      "before it reaches the acceptance",
+      "when it reaches the offeror"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 78,
+    "question": "An offer accept by anyone could be seen as a contract",
+    "options": [
+      "NO",
+      "YES"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 79,
+    "question": "A valid acceptance need to be",
+    "options": [
+      "unconditional and unequivocal",
+      "conditional",
+      "unconditional",
+      "conditional and equivocal"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 80,
+    "question": "Another name for formal contract is",
+    "options": [
+      "speciality",
+      "company",
+      "implied",
+      "expressed"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 81,
+    "question": "A promise made by one party in exchange for an act of other party",
+    "options": [
+      "executed",
+      "executory",
+      "expressed",
+      "simple"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 82,
+    "question": "An offer would terminate under any of the following except",
+    "options": [
+      "by non acceptance of the offer within the time prescribed for the offer",
+      "on the rejection of the offer",
+      "on the death of either of offeror or offeree",
+      "by non acceptance of the offer within the time prescribed for the acceptance"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 83,
+    "question": "Counter offer",
+    "options": [
+      "none of the above",
+      "validate the original offer",
+      "legalizes the original offer",
+      "legalizes and validate the original offer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 84,
+    "question": "Consideration must move from promisor to promisee",
+    "options": [
+      "NO",
+      "YES"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 85,
+    "question": "An offer may be revoke before",
+    "options": [
+      "it being accepted",
+      "after it being accepted",
+      "before and after it being accepted",
+      "invitation to treat"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 86,
+    "question": "All agreements are contract but not all contracts are agreements",
+    "options": [
+      "NO",
+      "YES"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 87,
+    "question": "All legal agreements are contract but not all legal contracts are agreements",
+    "options": [
+      "NO",
+      "YES",
+      "CONFUSED"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 88,
+    "question": "case of Pharmaceutical Society of Great Britain V Boots Cash Chemist describes a/an",
+    "options": [
+      "invitation to treat",
+      "offer",
+      "acceptance",
+      "counter offer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 89,
+    "question": "Lagunjo V Abake case is an example of a/an",
+    "options": [
+      "capacity to contract",
+      "acceptance",
+      "contract to marry",
+      "counter offer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 90,
+    "question": "Who among these has no capacity to contract",
+    "options": [
+      "All of the above",
+      "Allien",
+      "infant & married woman",
+      "illiterate"
+    ],
+    "correctAnswer": 0,
+    "note": "Assuming 'All of the above' based on typical contract law"
+  },
+  {
+    "id": 91,
+    "question": "Application of force to the person is",
+    "options": [
+      "battery",
+      "assault",
+      "assault and battery",
+      "all of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 92,
+    "question": "Price paid by one party for the act or promise of other party is",
+    "options": [
+      "consideration",
+      "offer",
+      "acceptance",
+      "capacity"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 93,
+    "question": "Two types of consideration are",
+    "options": [
+      "executed and executory",
+      "implied and expressed",
+      "bilateral and unilateral",
+      "none"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 94,
+    "question": "The law that regulate the internal affairs of the company is ----- company",
+    "options": [
+      "article of association",
+      "memorandum of association",
+      "memorandum of directors of company",
+      "share and Debentures"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 95,
+    "question": "Element of contract is of",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "3"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 96,
+    "question": "Transfer of Land without the consent of the head of the family is ..........contract",
+    "options": [
+      "void",
+      "voidable",
+      "illegal",
+      "implied"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 97,
+    "question": "An offer may come to an end by all except",
+    "options": [
+      "consideration",
+      "Lapse",
+      "revocation",
+      "rejection"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 98,
+    "question": "Where a counter offer is accepted then its terms and not the terms of the original offer becomes the terms of the contract",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 99,
+    "question": "Hyde v Wrench, On June 6 A offered B a farm for #250000; B made a counter offer of #150000. On 27 June, A rejected the counter offer. On 29 June B made a purported acceptance of the offer of June 6. Would there be a contract?",
+    "options": [
+      "NO",
+      "YES"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 100,
+    "question": "The principle of Unilateral Contract was laid down in................when made to the public",
+    "options": [
+      "the case of Carlil v Carbolic Smoke ball and co",
+      "the case of Kalil v Carbolic Smoke ball",
+      "the case of Payne v cave",
+      "the case of Carlil v Kabolic smoke Ball and Co"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 101,
+    "question": "To kiss someone without his/her consent is",
+    "options": [
+      "battery",
+      "assault",
+      "assault and battery",
+      "all of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 102,
+    "question": "All but one of the following are the document required for the incorporation of company",
+    "options": [
+      "none",
+      "list of directors",
+      "memorandum of association",
+      "total share declaration"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 103,
+    "question": "All but one of these types of contract is enforceable against an infant",
+    "options": [
+      "contract for necessaries and services",
+      "contract that have element of a valid contract",
+      "contract of employment",
+      "contract willingly entered by an infant"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 104,
+    "question": "An example of contract under seal is",
+    "options": [
+      "none of the above",
+      "Multilateral contract",
+      "Ordinary contract",
+      "Unilateral contract"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 105,
+    "question": "Which of these rules is not correct",
+    "options": [
+      "Consideration need not be inadequate",
+      "Consideration must not be past",
+      "Consideration must not be illegal",
+      "Consideration not be vague"
+    ],
+    "correctAnswer": 0,
+    "note": "This should be 'Consideration need not be adequate' - appears to be a typo in source"
+  },
+  {
+    "id": 106,
+    "question": "An act made by one party in exchange for a promise of other party",
+    "options": [
+      "executed",
+      "executory",
+      "expressed",
+      "simple"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 107,
+    "question": "Before there could be a valid contract, the parties to the agreement must have ----- to enter into that type of contract",
+    "options": [
+      "capacity",
+      "offer",
+      "intention to create legal relation",
+      "acceptance"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 108,
+    "question": "Past event which used as back up in the present is",
+    "options": [
+      "judicial precedence",
+      "Evidence",
+      "article",
+      "none of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 109,
+    "question": "------ does not determine the validity of customary law",
+    "options": [
+      "inequality test",
+      "repugnancy test",
+      "incompatibility test",
+      "inconsistency test"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 110,
+    "question": "To point a gun at someone and to slap someone is",
+    "options": [
+      "assault and battery",
+      "battery",
+      "assault",
+      "all of the above"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 111,
+    "question": "A moral promise is a valid consideration",
+    "options": [
+      "NO",
+      "YES"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 112,
+    "question": "Insane and drunken persons are bound to pay a reasonable price for necessaries according to the same rules that apply to infants",
+    "options": [
+      "YES",
+      "NO"
+    ],
+    "correctAnswer": 0
+  }
+]

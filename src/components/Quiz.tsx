@@ -1,11 +1,22 @@
 "use client";
 
-import React, { useState, useEffect, useMemo } from "react";
-import baseQuestions from "../../quiz_data_cleaned.json";
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import normalQuestions from "../../quiz_data_cleaned.json";
+import extendedQuestions from "../../bul506_extended_quiz.json";
 import { Question } from "@/types";
 import { shuffleArray, cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle2, XCircle, ChevronRight, RotateCcw, SkipForward, BookOpen, Trophy, Target, TrendingUp, AlertTriangle } from "lucide-react";
+import { CheckCircle2, XCircle, ChevronRight, RotateCcw, SkipForward, BookOpen, Trophy, Target, TrendingUp, AlertTriangle, ArrowLeft, Clock } from "lucide-react";
+
+export type QuizMode = "normal" | "extended" | "timed";
+
+const TIMED_QUESTION_COUNT = 50;
+const TIMED_DURATION_SECONDS = 20 * 60; // 20 minutes
+
+interface QuizProps {
+  mode: QuizMode;
+  onBack: () => void;
+}
 
 interface ShuffledQuestion extends Question {
   shuffledOptions: string[];
@@ -60,32 +71,72 @@ function getPreparednessData(percentage: number) {
   }
 }
 
-export default function Quiz() {
+function formatTime(seconds: number): string {
+  const mins = Math.floor(seconds / 60);
+  const secs = seconds % 60;
+  return `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
+}
+
+export default function Quiz({ mode, onBack }: QuizProps) {
   const [questions, setQuestions] = useState<ShuffledQuestion[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [score, setScore] = useState(0);
+  const [userAnswers, setUserAnswers] = useState<Record<number, string | null>>({});
+  const [showReview, setShowReview] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(TIMED_DURATION_SECONDS);
+  const [timedOut, setTimedOut] = useState(false);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Initialize questions
+  const isTimed = mode === "timed";
+
+  // Finish handler (stable ref for timer callback)
+  const finishQuiz = useCallback(() => {
+    setIsFinished(true);
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
+  }, []);
+
+  // Initialize questions based on mode
   useEffect(() => {
     setIsMounted(true);
-    // Load custom questions
-    const customQuestionsStr = localStorage.getItem("customQuestions");
-    let allQuestions = [...baseQuestions] as Question[];
 
-    if (customQuestionsStr) {
-      try {
-        const customQs = JSON.parse(customQuestionsStr) as Question[];
-        allQuestions = [...allQuestions, ...customQs];
-      } catch (e) {
-        console.error("Failed to parse custom questions", e);
+    // Build the full pool of questions
+    const allQuestions: Question[] = [
+      ...(normalQuestions as Question[]),
+      ...(extendedQuestions as Question[]),
+    ];
+
+    let sourceQuestions: Question[];
+    if (mode === "timed") {
+      // Timed: pick 50 random from the full pool
+      const shuffled = shuffleArray([...allQuestions]);
+      sourceQuestions = shuffled.slice(0, TIMED_QUESTION_COUNT);
+    } else if (mode === "extended") {
+      sourceQuestions = [...allQuestions];
+    } else {
+      sourceQuestions = [...(normalQuestions as Question[])];
+    }
+
+    // Load custom questions (not for timed mode to keep it fair at 50)
+    if (mode !== "timed") {
+      const customQuestionsStr = localStorage.getItem("customQuestions");
+      if (customQuestionsStr) {
+        try {
+          const customQs = JSON.parse(customQuestionsStr) as Question[];
+          sourceQuestions = [...sourceQuestions, ...customQs];
+        } catch (e) {
+          console.error("Failed to parse custom questions", e);
+        }
       }
     }
 
     // Shuffle all questions
-    const shuffledBaseQuestions = shuffleArray([...allQuestions]);
+    const shuffledBaseQuestions = shuffleArray([...sourceQuestions]);
 
     // Prepare questions with shuffled options
     const preparedQuestions: ShuffledQuestion[] = shuffledBaseQuestions.map((q) => {
@@ -98,17 +149,51 @@ export default function Quiz() {
     });
 
     setQuestions(preparedQuestions);
-  }, []);
+
+    // Start timer for timed mode
+    if (mode === "timed") {
+      setTimeLeft(TIMED_DURATION_SECONDS);
+      setTimedOut(false);
+    }
+  }, [mode]);
+
+  // Timer countdown
+  useEffect(() => {
+    if (!isTimed || isFinished || !isMounted) return;
+
+    timerRef.current = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          setTimedOut(true);
+          finishQuiz();
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
+    };
+  }, [isTimed, isFinished, isMounted, finishQuiz]);
 
   const currentQuestion = questions[currentIndex];
 
   const handleAnswerSelect = (option: string) => {
-    if (selectedAnswer) return; // Prevent multiple selections
+    if (selectedAnswer) return;
     setSelectedAnswer(option);
 
     if (option === currentQuestion.correctOptionText) {
       setScore((prev) => prev + 1);
     }
+
+    setUserAnswers((prev) => ({
+      ...prev,
+      [currentIndex]: option,
+    }));
   };
 
   const handleNext = () => {
@@ -116,30 +201,56 @@ export default function Quiz() {
       setCurrentIndex((prev) => prev + 1);
       setSelectedAnswer(null);
     } else {
-      setIsFinished(true);
+      finishQuiz();
     }
   };
 
   const handleSkip = () => {
+    setUserAnswers((prev) => ({
+      ...prev,
+      [currentIndex]: null,
+    }));
+
     if (currentIndex < questions.length - 1) {
-      // Skipped questions do not add to score
       setCurrentIndex((prev) => prev + 1);
       setSelectedAnswer(null);
     } else {
-      setIsFinished(true);
+      finishQuiz();
     }
   };
 
   const resetQuiz = () => {
-    // Reshuffle questions and their options
-    const reshuffledQuestions = shuffleArray(questions.map(q => ({
-      ...q,
-      shuffledOptions: shuffleArray([...q.options])
-    })));
-    
-    setQuestions(reshuffledQuestions);
+    // For timed mode, re-pick 50 random questions
+    if (mode === "timed") {
+      const allQuestions: Question[] = [
+        ...(normalQuestions as Question[]),
+        ...(extendedQuestions as Question[]),
+      ];
+      const shuffled = shuffleArray([...allQuestions]);
+      const picked = shuffled.slice(0, TIMED_QUESTION_COUNT);
+      const preparedQuestions: ShuffledQuestion[] = shuffleArray(picked).map((q) => {
+        const correctOptionText = q.options[q.correctAnswer];
+        return {
+          ...q,
+          correctOptionText,
+          shuffledOptions: shuffleArray([...q.options]),
+        };
+      });
+      setQuestions(preparedQuestions);
+      setTimeLeft(TIMED_DURATION_SECONDS);
+      setTimedOut(false);
+    } else {
+      const reshuffledQuestions = shuffleArray(questions.map(q => ({
+        ...q,
+        shuffledOptions: shuffleArray([...q.options])
+      })));
+      setQuestions(reshuffledQuestions);
+    }
+
     setCurrentIndex(0);
     setScore(0);
+    setUserAnswers({});
+    setShowReview(false);
     setIsFinished(false);
     setSelectedAnswer(null);
   };
@@ -156,8 +267,9 @@ export default function Quiz() {
     const percentage = Math.round((score / questions.length) * 100);
     const prep = getPreparednessData(percentage);
     const PrepIcon = prep.icon;
-    const circumference = 2 * Math.PI * 54; // radius = 54
+    const circumference = 2 * Math.PI * 54;
     const dashOffset = circumference - (percentage / 100) * circumference;
+    const timeUsed = TIMED_DURATION_SECONDS - timeLeft;
 
     return (
       <motion.div
@@ -171,6 +283,18 @@ export default function Quiz() {
           prep.bgColor,
           prep.borderColor
         )}>
+          {/* Timed Out Banner */}
+          {isTimed && timedOut && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mb-6 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-medium"
+            >
+              <Clock className="w-4 h-4" />
+              Time&apos;s Up!
+            </motion.div>
+          )}
+
           {/* Circular Progress */}
           <div className="relative w-36 h-36 mx-auto mb-6">
             <svg className="w-full h-full -rotate-90" viewBox="0 0 120 120">
@@ -226,7 +350,7 @@ export default function Quiz() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9 }}
-            className="grid grid-cols-3 gap-3 mb-6"
+            className={cn("grid gap-3 mb-6", isTimed ? "grid-cols-4" : "grid-cols-3")}
           >
             <div className="bg-background/60 backdrop-blur-sm rounded-xl p-3 border border-border/50">
               <div className="text-2xl font-bold text-emerald-400">{score}</div>
@@ -240,6 +364,12 @@ export default function Quiz() {
               <div className="text-2xl font-bold text-foreground">{questions.length}</div>
               <div className="text-xs text-muted-foreground">Total</div>
             </div>
+            {isTimed && (
+              <div className="bg-background/60 backdrop-blur-sm rounded-xl p-3 border border-border/50">
+                <div className="text-2xl font-bold text-purple-400">{formatTime(timeUsed)}</div>
+                <div className="text-xs text-muted-foreground">Time Used</div>
+              </div>
+            )}
           </motion.div>
 
           {/* Message */}
@@ -252,28 +382,200 @@ export default function Quiz() {
             {prep.message}
           </motion.p>
 
-          {/* Retake Button */}
-          <motion.button
+          {/* Action Buttons */}
+          <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.3 }}
-            onClick={resetQuiz}
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium hover:bg-primary/90 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3"
           >
-            <RotateCcw className="w-5 h-5" />
-            Retake Quiz
-          </motion.button>
+            <button
+              onClick={onBack}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-muted-foreground hover:bg-secondary transition-all border border-border/50"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              Back to Menu
+            </button>
+            <button
+              onClick={() => setShowReview(true)}
+              className="inline-flex items-center gap-2 bg-secondary text-foreground px-6 py-3 rounded-xl font-medium hover:bg-secondary/80 transition-all border border-border/50"
+            >
+              <BookOpen className="w-5 h-5" />
+              Review Answers
+            </button>
+            <button
+              onClick={resetQuiz}
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium hover:bg-primary/90 transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg"
+            >
+              <RotateCcw className="w-5 h-5" />
+              Retake Quiz
+            </button>
+          </motion.div>
         </div>
       </motion.div>
     );
   }
 
+  if (isFinished && showReview) {
+    return (
+      <div className="max-w-3xl mx-auto pb-10">
+        <div className="flex items-center justify-between mb-8 sticky top-20 z-40 bg-background/80 backdrop-blur-md py-4 border-b border-border/50">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setShowReview(false)}
+              className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Results
+            </button>
+          </div>
+          <h2 className="text-xl font-bold">Review Answers</h2>
+          <div className="text-sm font-medium text-primary">
+            Score: {score}/{questions.length}
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          {questions.map((q, idx) => {
+            const userAnswer = userAnswers[idx];
+            const isCorrect = userAnswer === q.correctOptionText;
+            const wasSkipped = userAnswer === null;
+
+            return (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.05 }}
+                className="bg-card rounded-2xl p-6 border border-border shadow-sm"
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-sm font-bold">
+                    {idx + 1}
+                  </span>
+                  <h4 className="text-lg font-semibold leading-tight">{q.question}</h4>
+                </div>
+
+                <div className="space-y-3 pl-12">
+                  {/* Status Indicator */}
+                  <div className="flex items-center gap-2 mb-4">
+                    {isCorrect ? (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-bold uppercase tracking-wider border border-emerald-500/20">
+                        <CheckCircle2 className="w-3.5 h-3.5" />
+                        Correct
+                      </span>
+                    ) : wasSkipped ? (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-500 text-xs font-bold uppercase tracking-wider border border-amber-500/20">
+                        <SkipForward className="w-3.5 h-3.5" />
+                        Skipped
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/10 text-red-500 text-xs font-bold uppercase tracking-wider border border-red-500/20">
+                        <XCircle className="w-3.5 h-3.5" />
+                        Incorrect
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="grid gap-3">
+                    {/* User's Choice */}
+                    {!wasSkipped && (
+                      <div className={cn(
+                        "p-4 rounded-xl border-2 flex items-center justify-between gap-4",
+                        isCorrect
+                          ? "bg-emerald-500/5 border-emerald-500/20 text-emerald-900 dark:text-emerald-300"
+                          : "bg-red-500/5 border-red-500/20 text-red-900 dark:text-red-300"
+                      )}>
+                        <div>
+                          <span className="block text-[10px] font-black uppercase tracking-widest opacity-60 mb-1">Your Selection</span>
+                          <span className="font-medium">{userAnswer}</span>
+                        </div>
+                        {isCorrect ? <CheckCircle2 className="w-5 h-5 flex-shrink-0" /> : <XCircle className="w-5 h-5 flex-shrink-0" />}
+                      </div>
+                    )}
+
+                    {/* Correct Answer (if wrong or skipped) */}
+                    {!isCorrect && (
+                      <div className="p-4 rounded-xl border-2 border-dashed border-emerald-500/30 bg-emerald-500/5 text-emerald-900 dark:text-emerald-300">
+                        <span className="block text-[10px] font-black uppercase tracking-widest opacity-60 mb-1">Correct Answer</span>
+                        <span className="font-medium">{q.correctOptionText}</span>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Explanation */}
+                  {q.explanation && (
+                    <div className="mt-6 p-5 rounded-xl bg-blue-500/5 border border-blue-500/10">
+                      <div className="flex items-start gap-3">
+                        <BookOpen className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />
+                        <div>
+                          <p className="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-1">Educational Principle</p>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {q.explanation}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+
+        <div className="mt-12 text-center">
+          <button
+            onClick={() => setShowReview(false)}
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium hover:bg-primary/90 transition-all shadow-lg"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            Back to Summary
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   const progress = ((currentIndex + 1) / questions.length) * 100;
+  const modeLabel = mode === "extended" ? "Extended Quiz" : mode === "timed" ? "Timed Quiz" : "Normal Quiz";
+
+  // Timer color based on remaining time
+  const timerColor = timeLeft <= 60
+    ? "text-red-500 bg-red-500/10 border-red-500/30"
+    : timeLeft <= 300
+      ? "text-amber-500 bg-amber-500/10 border-amber-500/30"
+      : "text-foreground bg-secondary/50 border-border/50";
 
   return (
     <div className="max-w-3xl mx-auto">
-      {/* Progress Bar */}
+      {/* Header with Back Button and Progress */}
       <div className="mb-8">
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={onBack}
+              className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back
+            </button>
+            <span className="text-sm text-muted-foreground">•</span>
+            <span className="text-sm font-medium text-primary">
+              {modeLabel}
+            </span>
+          </div>
+
+          {/* Timer Display */}
+          {isTimed && (
+            <div className={cn(
+              "flex items-center gap-2 px-3 py-1.5 rounded-full border font-mono text-sm font-bold transition-colors",
+              timerColor
+            )}>
+              <Clock className="w-4 h-4" />
+              {formatTime(timeLeft)}
+            </div>
+          )}
+        </div>
         <div className="flex justify-between text-sm font-medium text-muted-foreground mb-3">
           <span>Question {currentIndex + 1} of {questions.length}</span>
           <span>Score: {score}</span>
@@ -337,30 +639,32 @@ export default function Quiz() {
             })}
           </div>
 
-          {/* Explanation Box */}
-          <AnimatePresence>
-            {selectedAnswer && currentQuestion.explanation && (
-              <motion.div
-                initial={{ opacity: 0, height: 0, marginTop: 0 }}
-                animate={{ opacity: 1, height: "auto", marginTop: 24 }}
-                exit={{ opacity: 0, height: 0, marginTop: 0 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="overflow-hidden"
-              >
-                <div className="bg-blue-500/5 border border-blue-500/20 rounded-xl p-5">
-                  <div className="flex items-start gap-3">
-                    <BookOpen className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />
-                    <div>
-                      <p className="text-sm font-semibold text-blue-400 mb-1.5">Explanation</p>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {currentQuestion.explanation}
-                      </p>
+          {/* Explanation Box — hidden in timed mode to keep pace */}
+          {!isTimed && (
+            <AnimatePresence>
+              {selectedAnswer && currentQuestion.explanation && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                  animate={{ opacity: 1, height: "auto", marginTop: 24 }}
+                  exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="overflow-hidden"
+                >
+                  <div className="bg-blue-500/5 border border-blue-500/20 rounded-xl p-5">
+                    <div className="flex items-start gap-3">
+                      <BookOpen className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />
+                      <div>
+                        <p className="text-sm font-semibold text-blue-400 mb-1.5">Explanation</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          {currentQuestion.explanation}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          )}
 
           <div className="mt-10 flex items-center justify-between">
             {!selectedAnswer ? (
@@ -368,8 +672,8 @@ export default function Quiz() {
                 onClick={handleSkip}
                 className="flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-muted-foreground hover:bg-secondary transition-colors"
               >
-                <SkipForward className="w-5 h-5" />
-                Skip Question
+              <SkipForward className="w-5 h-5" />
+              Skip Question
               </button>
             ) : (
               <div /> // Spacer
