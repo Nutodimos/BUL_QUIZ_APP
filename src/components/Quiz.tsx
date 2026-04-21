@@ -267,6 +267,126 @@ export default function Quiz({ mode, onBack }: QuizProps) {
     );
   }
 
+  if (isFinished && showReview) {
+    return (
+      <div className="max-w-3xl mx-auto pb-10">
+        <div className="flex items-center justify-between mb-8 sticky top-20 z-40 bg-background/80 backdrop-blur-md py-4 border-b border-border/50">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setShowReview(false)}
+              className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Results
+            </button>
+          </div>
+          <h2 className="text-xl font-bold">Review Answers</h2>
+          <div className="text-sm font-medium text-primary">
+            Score: {score}/{questions.length}
+          </div>
+        </div>
+
+        <div className="space-y-6">
+          {questions.map((q, idx) => {
+            const userAnswer = userAnswers[idx];
+            const isCorrect = userAnswer === q.correctOptionText;
+            const wasSkipped = userAnswer === null;
+
+            return (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.05 }}
+                className="bg-card rounded-2xl p-6 border border-border shadow-sm"
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-sm font-bold">
+                    {idx + 1}
+                  </span>
+                  <h4 className="text-lg font-semibold leading-tight">{q.question}</h4>
+                </div>
+
+                <div className="space-y-3 pl-12">
+                  {/* Status Indicator */}
+                  <div className="flex items-center gap-2 mb-4">
+                    {isCorrect ? (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-bold uppercase tracking-wider border border-emerald-500/20">
+                        <CheckCircle2 className="w-3.5 h-3.5" />
+                        Correct
+                      </span>
+                    ) : wasSkipped ? (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-500 text-xs font-bold uppercase tracking-wider border border-amber-500/20">
+                        <SkipForward className="w-3.5 h-3.5" />
+                        Skipped
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/10 text-red-500 text-xs font-bold uppercase tracking-wider border border-red-500/20">
+                        <XCircle className="w-3.5 h-3.5" />
+                        Incorrect
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="grid gap-3">
+                    {/* User's Choice */}
+                    {!wasSkipped && (
+                      <div className={cn(
+                        "p-4 rounded-xl border-2 flex items-center justify-between gap-4",
+                        isCorrect
+                          ? "bg-emerald-500/5 border-emerald-500/20 text-emerald-900 dark:text-emerald-300"
+                          : "bg-red-500/5 border-red-500/20 text-red-900 dark:text-red-300"
+                      )}>
+                        <div>
+                          <span className="block text-[10px] font-black uppercase tracking-widest opacity-60 mb-1">Your Selection</span>
+                          <span className="font-medium">{userAnswer}</span>
+                        </div>
+                        {isCorrect ? <CheckCircle2 className="w-5 h-5 flex-shrink-0" /> : <XCircle className="w-5 h-5 flex-shrink-0" />}
+                      </div>
+                    )}
+
+                    {/* Correct Answer (if wrong or skipped) */}
+                    {!isCorrect && (
+                      <div className="p-4 rounded-xl border-2 border-dashed border-emerald-500/30 bg-emerald-500/5 text-emerald-900 dark:text-emerald-300">
+                        <span className="block text-[10px] font-black uppercase tracking-widest opacity-60 mb-1">Correct Answer</span>
+                        <span className="font-medium">{q.correctOptionText}</span>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Explanation */}
+                  {q.explanation && (
+                    <div className="mt-6 p-5 rounded-xl bg-blue-500/5 border border-blue-500/10">
+                      <div className="flex items-start gap-3">
+                        <BookOpen className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />
+                        <div>
+                          <p className="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-1">Educational Principle</p>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {q.explanation}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+
+        <div className="mt-12 text-center">
+          <button
+            onClick={() => setShowReview(false)}
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium hover:bg-primary/90 transition-all shadow-lg"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            Back to Summary
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   if (isFinished) {
     const percentage = Math.round((score / questions.length) * 100);
     const prep = getPreparednessData(percentage);
@@ -420,125 +540,7 @@ export default function Quiz({ mode, onBack }: QuizProps) {
     );
   }
 
-  if (isFinished && showReview) {
-    return (
-      <div className="max-w-3xl mx-auto pb-10">
-        <div className="flex items-center justify-between mb-8 sticky top-20 z-40 bg-background/80 backdrop-blur-md py-4 border-b border-border/50">
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => setShowReview(false)}
-              className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Results
-            </button>
-          </div>
-          <h2 className="text-xl font-bold">Review Answers</h2>
-          <div className="text-sm font-medium text-primary">
-            Score: {score}/{questions.length}
-          </div>
-        </div>
-
-        <div className="space-y-6">
-          {questions.map((q, idx) => {
-            const userAnswer = userAnswers[idx];
-            const isCorrect = userAnswer === q.correctOptionText;
-            const wasSkipped = userAnswer === null;
-
-            return (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.05 }}
-                className="bg-card rounded-2xl p-6 border border-border shadow-sm"
-              >
-                <div className="flex items-start gap-4 mb-4">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-sm font-bold">
-                    {idx + 1}
-                  </span>
-                  <h4 className="text-lg font-semibold leading-tight">{q.question}</h4>
-                </div>
-
-                <div className="space-y-3 pl-12">
-                  {/* Status Indicator */}
-                  <div className="flex items-center gap-2 mb-4">
-                    {isCorrect ? (
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-bold uppercase tracking-wider border border-emerald-500/20">
-                        <CheckCircle2 className="w-3.5 h-3.5" />
-                        Correct
-                      </span>
-                    ) : wasSkipped ? (
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-500 text-xs font-bold uppercase tracking-wider border border-amber-500/20">
-                        <SkipForward className="w-3.5 h-3.5" />
-                        Skipped
-                      </span>
-                    ) : (
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/10 text-red-500 text-xs font-bold uppercase tracking-wider border border-red-500/20">
-                        <XCircle className="w-3.5 h-3.5" />
-                        Incorrect
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="grid gap-3">
-                    {/* User's Choice */}
-                    {!wasSkipped && (
-                      <div className={cn(
-                        "p-4 rounded-xl border-2 flex items-center justify-between gap-4",
-                        isCorrect
-                          ? "bg-emerald-500/5 border-emerald-500/20 text-emerald-900 dark:text-emerald-300"
-                          : "bg-red-500/5 border-red-500/20 text-red-900 dark:text-red-300"
-                      )}>
-                        <div>
-                          <span className="block text-[10px] font-black uppercase tracking-widest opacity-60 mb-1">Your Selection</span>
-                          <span className="font-medium">{userAnswer}</span>
-                        </div>
-                        {isCorrect ? <CheckCircle2 className="w-5 h-5 flex-shrink-0" /> : <XCircle className="w-5 h-5 flex-shrink-0" />}
-                      </div>
-                    )}
-
-                    {/* Correct Answer (if wrong or skipped) */}
-                    {!isCorrect && (
-                      <div className="p-4 rounded-xl border-2 border-dashed border-emerald-500/30 bg-emerald-500/5 text-emerald-900 dark:text-emerald-300">
-                        <span className="block text-[10px] font-black uppercase tracking-widest opacity-60 mb-1">Correct Answer</span>
-                        <span className="font-medium">{q.correctOptionText}</span>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Explanation */}
-                  {q.explanation && (
-                    <div className="mt-6 p-5 rounded-xl bg-blue-500/5 border border-blue-500/10">
-                      <div className="flex items-start gap-3">
-                        <BookOpen className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />
-                        <div>
-                          <p className="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-1">Educational Principle</p>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
-                            {q.explanation}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
-
-        <div className="mt-12 text-center">
-          <button
-            onClick={() => setShowReview(false)}
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-medium hover:bg-primary/90 transition-all shadow-lg"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            Back to Summary
-          </button>
-        </div>
-      </div>
-    );
-  }
+ 
 
   const progress = ((currentIndex + 1) / questions.length) * 100;
   const modeLabel = mode === "extended" ? "Extended Quiz" : mode === "timed" ? "Timed Quiz" : "Normal Quiz";
