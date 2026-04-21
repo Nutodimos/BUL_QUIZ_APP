@@ -280,7 +280,7 @@ export default function Quiz({ mode, onBack }: QuizProps) {
               Back to Results
             </button>
           </div>
-          <h2 className="text-xl font-bold">Review Answers</h2>
+          <h2 className="text-xl font-bold text-slate-900 dark:text-slate-100">Review Answers</h2>
           <div className="text-sm font-medium text-primary">
             Score: {score}/{questions.length}
           </div>
@@ -304,7 +304,7 @@ export default function Quiz({ mode, onBack }: QuizProps) {
                   <span className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-sm font-bold">
                     {idx + 1}
                   </span>
-                  <h4 className="text-lg font-semibold leading-tight">{q.question}</h4>
+                  <h4 className="text-lg font-bold leading-tight text-slate-900 dark:text-slate-100">{q.question}</h4>
                 </div>
 
                 <div className="space-y-3 pl-12">
@@ -339,7 +339,7 @@ export default function Quiz({ mode, onBack }: QuizProps) {
                       )}>
                         <div>
                           <span className="block text-[10px] font-black uppercase tracking-widest opacity-60 mb-1">Your Selection</span>
-                          <span className="font-medium">{userAnswer}</span>
+                          <span className="font-bold text-slate-900 dark:text-slate-100">{userAnswer}</span>
                         </div>
                         {isCorrect ? <CheckCircle2 className="w-5 h-5 flex-shrink-0" /> : <XCircle className="w-5 h-5 flex-shrink-0" />}
                       </div>
@@ -349,7 +349,7 @@ export default function Quiz({ mode, onBack }: QuizProps) {
                     {!isCorrect && (
                       <div className="p-4 rounded-xl border-2 border-dashed border-emerald-500/30 bg-emerald-500/5 text-emerald-900 dark:text-emerald-300">
                         <span className="block text-[10px] font-black uppercase tracking-widest opacity-60 mb-1">Correct Answer</span>
-                        <span className="font-medium">{q.correctOptionText}</span>
+                        <span className="font-bold text-emerald-900 dark:text-emerald-100 truncate">{q.correctOptionText}</span>
                       </div>
                     )}
                   </div>
@@ -361,7 +361,7 @@ export default function Quiz({ mode, onBack }: QuizProps) {
                         <BookOpen className="w-5 h-5 text-blue-400 mt-0.5 shrink-0" />
                         <div>
                           <p className="text-[10px] font-black uppercase tracking-widest text-blue-400 mb-1">Educational Principle</p>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
+                          <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
                             {q.explanation}
                           </p>
                         </div>
@@ -522,7 +522,7 @@ export default function Quiz({ mode, onBack }: QuizProps) {
             </button>
             <button
               onClick={() => setShowReview(true)}
-              className="inline-flex items-center gap-2 bg-secondary text-foreground px-6 py-3 rounded-xl font-medium hover:bg-secondary/80 transition-all border border-border/50"
+              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-xl font-medium hover:bg-secondary/80 transition-all border border-border/50"
             >
               <BookOpen className="w-5 h-5" />
               Review Answers
