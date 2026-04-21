@@ -1,0 +1,589 @@
+[
+  {
+    "id": 1,
+    "question": "The essence of Engineering law is to",
+    "options": [
+      "guide the activities of Engineers in engineering activities",
+      "guide Engineer in all his endeavour",
+      "protect engineers across the world",
+      "guide the activities of humanbeing in the society"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Engineering law can be defined as the rules and regulations guiding the activities of the engineers in the discharge of their duties, the breach of which may warrant sanction(s). Its essence is specifically to guide Engineers in their engineering activities — not all endeavours, not to protect them globally, and not to guide all humans."
+  },
+  {
+    "id": 2,
+    "question": "One of the characteristics of customary law is",
+    "options": [
+      "Mirror of acceptable usage",
+      "meet repulganancy test",
+      "meet consistency test",
+      "all of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "One of the key characteristics of customary law is that it must be 'a mirror of acceptable usage,' as established in the case of Owonyi v. Omotosho. While customary law must also pass the repugnancy test, 'mirror of acceptable usage' is listed as a characteristic, not a validity test. The repugnancy test and compatibility test are validity requirements, not characteristics."
+  },
+  {
+    "id": 3,
+    "question": "The enforcement of which that may be backed by sanction is",
+    "options": [
+      "Law",
+      "Custom",
+      "Morality",
+      "custom and morality"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Law is defined as rules and regulations that bind the activities of individuals and general public in a particular society or association, the enforcement of which may be backed by sanction. Custom and morality do not carry the same formal enforcement backed by sanctions."
+  },
+  {
+    "id": 4,
+    "question": "Law passed by the Nigeria legislators on the ways and manner engineering business should be conducted is",
+    "options": [
+      "COREN Act",
+      "Engineering principles",
+      "Engineering law",
+      "Common law"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nigerian Statutes/Legislation are laws passed by the legislative bodies on engineering activities in Nigeria. The COREN Act is a specific example of such legislation that governs the ways and manner engineering business should be conducted in Nigeria."
+  },
+  {
+    "id": 5,
+    "question": "......can be defined as the rules and regulations guiding the conduct of engineers in the discharge of their duties backed by sanction",
+    "options": [
+      "Engineering law",
+      "common law of engineering",
+      "Equitable principle of engineering",
+      "Acts of national assembly"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Engineering law can be defined as the rules and regulations guiding the activities of the engineers in the discharge of their duties, the breach of which may warrant sanction(s). This is the direct definition given in the lecture notes."
+  },
+  {
+    "id": 6,
+    "question": "The major source of Engineering law in Nigeria is",
+    "options": [
+      "Nigeria Constitution, 1999 as amended",
+      "National Assembly law, 1999 as amended",
+      "Nigeria Constitution, 1990 as amended",
+      "Nigeria Constitution, 1989 as amended"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The sources of Engineering law include Nigerian Statutes/Legislation, which are laws passed by legislative bodies. The Nigerian 1999 Constitution (as amended) is specifically mentioned as a key example and serves as the major source of Engineering law in Nigeria."
+  },
+  {
+    "id": 7,
+    "question": "An example of Nigerian Statutes applicable to Engineering practices is",
+    "options": [
+      "COREN Act",
+      "Common law",
+      "Equity",
+      "Received English law"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Nigerian Statutes/Legislation are laws passed by the legislative bodies on engineering activities in Nigeria. The COREN Act is specifically cited as an example of Nigerian statutes applicable to engineering practices. Common law, Equity, and Received English law are separate sources of law, not Nigerian statutes."
+  },
+  {
+    "id": 8,
+    "question": "One of the primary sources of Engineering law is",
+    "options": [
+      "Received English law",
+      "subsidiary legislation",
+      "Local government bye-law",
+      "State engineering law"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The primary sources of Engineering law include: (1) Received English Law (comprising Common law, Equity, and Statute of General Application), (2) Nigerian Statutes/Legislation, (3) Customary law, and (4) Judicial Precedent. Received English law is explicitly listed as a primary source."
+  },
+  {
+    "id": 9,
+    "question": "Engineering law made by the central legislature before 1st october, 1954 is",
+    "options": [
+      "Ordinance",
+      "Act",
+      "Edict",
+      "Bye-law"
+    ],
+    "correctAnswer": 0,
+    "explanation": "According to the lecture notes, Ordinances are laws passed by the central legislature before 1st October 1954. Acts are laws passed by the National Assembly in a civilian regime, Edicts are laws made by State government during the Military era, and Bye-laws are made by Local government authority."
+  },
+  {
+    "id": 10,
+    "question": "Engineering law made by the state legislature during the military era is",
+    "options": [
+      "Edict",
+      "ordinance",
+      "Bye-law",
+      "Act"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An Edict is a law made by the State government during the Military era. Ordinances were made by the central legislature before 1954, Acts are made by the National Assembly in civilian regimes, and Bye-laws are made by Local government authorities."
+  },
+  {
+    "id": 11,
+    "question": "Law made by the Federal military government to regulate engineering business in Nigeria is called",
+    "options": [
+      "Decree",
+      "Bye-law",
+      "Edict",
+      "Act"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A Decree is a law made by the Federal Government during Military regime. This is distinct from an Edict (which is made by the State government during the Military era), an Act (made by the National Assembly in civilian regime), and a Bye-law (made by Local government authority)."
+  },
+  {
+    "id": 12,
+    "question": "One of the characteristics of custom as applicable to engineering business in Nigeria is",
+    "options": [
+      "unwritten",
+      "unknown to custom",
+      "unknown to law",
+      "need not be proved"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Custom is the rules and regulations of a particular profession/engineering which are regarded as their traditions but are largely unwritten. The lecture notes list 'largely unwritten' as one of the key characteristics of customary law. Custom must be proved (through witnesses, documents, or calling assessors), so 'need not be proved' is incorrect."
+  },
+  {
+    "id": 13,
+    "question": "An engineer can prove custom of his profession by any of the following:",
+    "options": [
+      "Calling president of COREN",
+      "calling legal practitioner",
+      "by written statement",
+      "by tendering constitution 1999"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Customary law can be proved by: (1) calling witnesses, (2) tendering documents, or (3) calling Assessors or chiefs. Calling the president of COREN falls under calling witnesses/assessors — an authoritative figure who can testify to the customs of the engineering profession."
+  },
+  {
+    "id": 14,
+    "question": "Engineering law that is against public assessment would be accepted as standard of behaviour:",
+    "options": [
+      "No",
+      "yes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Customary law must not be contrary to public policy, and it must be a mirror of acceptable usage. Engineering law that goes against public assessment (public policy) would not be accepted as a standard of behaviour because it fails the validity test for customary law."
+  },
+  {
+    "id": 15,
+    "question": "The principle that customary law must be a mirror of acceptable usage is decided in the case of",
+    "options": [
+      "Owonyi v. omotosho",
+      "Dampamg v Sale",
+      "Ada v adeola",
+      "omotosho v owonyi"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The lecture notes explicitly state that customary law being 'a mirror of acceptable usage' was established in the case of OWOYIN V. OMOTOSHO. The case of Dampamg v. Sale Dang Gwom relates to a different principle — that customary law is not static."
+  },
+  {
+    "id": 16,
+    "question": "Judgment of the court whereby engineering principle is being generated is called",
+    "options": [
+      "Precedent",
+      "Authority",
+      "judgement",
+      "Statement"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Judicial Precedent is a source of engineering law found when the court is called upon to interpret statutes/legislation. It is referred to as Judge-made law or case law. When court judgments generate engineering principles, these are known as precedents."
+  },
+  {
+    "id": 17,
+    "question": "A court where its decision binds all other courts in Nigeria is",
+    "options": [
+      "Supreme court",
+      "court of Appeal",
+      "Shariah court",
+      "High court"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Supreme Court's decisions bind all other courts in Nigeria. The Court of Appeal is next to the Supreme Court and its decisions bind all other courts except the Supreme Court. The High Court and Shariah Court are lower in the hierarchy."
+  },
+  {
+    "id": 18,
+    "question": "One of the court of record is",
+    "options": [
+      "High court of kwara state",
+      "Magistrate court of kwara state",
+      "Upper Area court",
+      "Area court",
+      "None of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Courts of record are courts that are mentioned in the constitution. These include the Supreme Court, Court of Appeal, Federal High Court, National Industrial Court, States High Court, Shariah Court of Appeal, Customary Court of Appeal, etc. The High Court of Kwara State is a State High Court and therefore a court of record. Magistrate, District, Upper Area, and Shariah courts are NOT courts of record because they do not appear in the constitution."
+  },
+  {
+    "id": 19,
+    "question": "Court of Appeal and High Court are court of coordinate jurisdiction",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Court of Appeal is NOT a court of coordinate jurisdiction with the High Court. The Court of Appeal is superior — it is next to the Supreme Court. Courts of coordinate jurisdiction are courts at the same level, such as Federal High Court, National Industrial Court, States High Court, Shariah Court of Appeal, and Customary Court of Appeal. Appeals from these courts go to the Court of Appeal."
+  },
+  {
+    "id": 20,
+    "question": "State High and Federal High court are courts of coordinate jurisdiction",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "State High Court and Federal High Court are indeed courts of coordinate jurisdiction. The lecture notes list Federal High Court, National Industrial Court, States High Court, Shariah Court of Appeal, Customary Court of Appeal, Court Marshal, and Code of Conduct Tribunal as courts of coordinate jurisdiction. Appeals from all these courts go to the Court of Appeal."
+  },
+  {
+    "id": 21,
+    "question": "Federal High court and National Industrial court are court of coordinate jurisdiction",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Both the Federal High Court and the National Industrial Court are listed as courts of coordinate jurisdiction in the lecture notes. They sit at the same level in the court hierarchy, and appeals from both go to the Court of Appeal."
+  },
+  {
+    "id": 22,
+    "question": "Shariah court of Appeal and Customary court of Appeal are not courts of coordinate jurisdiction",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The statement is False because Shariah Court of Appeal and Customary Court of Appeal ARE courts of coordinate jurisdiction. The lecture notes list them together alongside Federal High Court, National Industrial Court, States High Court, Court Marshal, and Code of Conduct Tribunal as courts of coordinate jurisdiction."
+  },
+  {
+    "id": 23,
+    "question": "Magistrate, Upper or Area and District courts are courts of Record",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Magistrate/District court, Customary court, Upper Area Court, and Shariah Court are NOT courts of Record because they do not mention or appear in the constitution. Courts of record are those established by the constitution."
+  },
+  {
+    "id": 24,
+    "question": "A court is a court of record because it is not mentioned in the constitution",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is False. A court is a court of record precisely because it IS mentioned in the constitution, not because it is not. Courts that are NOT mentioned in the constitution (like Magistrate courts, Area courts) are NOT courts of record."
+  },
+  {
+    "id": 25,
+    "question": "The decision of court of Appeal on Engineering matter binds the Supreme court",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This is False. The Court of Appeal's decisions bind all other courts in Nigeria EXCEPT the Supreme Court. Only the Supreme Court's decisions bind all other courts including the Court of Appeal. The Supreme Court sits at the top of the judicial hierarchy."
+  },
+  {
+    "id": 26,
+    "question": "Tortious liability of an engineer may be inform of all of the following except",
+    "options": [
+      "partial false imprisonment",
+      "Assault",
+      "Negligent",
+      "Battery"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Tortious liabilities of Engineers may be in the form of Assault, Battery, and False imprisonment. However, for false imprisonment, the restraint must be complete and total (Bird v. Jones). A PARTIAL false imprisonment does not constitute the tort of false imprisonment — partial restraint is actually a defence. Therefore, 'partial false imprisonment' is not a valid form of tortious liability."
+  },
+  {
+    "id": 27,
+    "question": "An engineer putting fear into the mind of his colleagues that a battery is about to be committed is responsible for the tort of",
+    "options": [
+      "Assault",
+      "Battery",
+      "Battery and Assault",
+      "Assault or battery"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Assault is defined as intentionally putting fear into the mind of another that a battery is about to be committed against that person. Since no actual force was applied (which would be battery), this is purely the tort of assault. Examples include where A intends to slap B, A points a gun at B, or A approaches B menacingly."
+  },
+  {
+    "id": 28,
+    "question": "Engineer Ajadi approached Engineer Oloje menacingly. Engineer Ajadi has committed the tort of:",
+    "options": [
+      "Assault",
+      "Battery",
+      "False prison",
+      "none of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Approaching someone menacingly is specifically listed in the lecture notes as an example of assault. Assault is putting fear into the mind of another that a battery is about to be committed. Since Engineer Ajadi only approached menacingly (no physical contact), this constitutes assault, not battery."
+  },
+  {
+    "id": 29,
+    "question": "Projection of torch light on the body of another is",
+    "options": [
+      "Battery",
+      "Battery and Assault",
+      "Assault and Battery",
+      "All of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Battery is the intentional application of force on the body of another. The lecture notes state that battery may be committed without direct physical application of force on the body — examples include smoking on a person or projection of light on a person. Therefore, projecting torch light on someone's body constitutes battery."
+  },
+  {
+    "id": 30,
+    "question": "Intentional application of force into the body of another is simply refer to as",
+    "options": [
+      "Battery",
+      "Assault",
+      "Assault and Battery",
+      "None of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Battery is defined as the intentional application of force on the body of another. Examples include A beating B, or A kissing B without consent. This is distinct from assault, which is merely putting fear into someone's mind that battery is about to be committed."
+  },
+  {
+    "id": 31,
+    "question": "In the case of ........... the court held that in false imprisonment, restraint must be complete and total",
+    "options": [
+      "Bird v. jone",
+      "Jone v Bird",
+      "Bird jone v Jone Bird",
+      "Bird v.Bird"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The case of Bird v. Jones established the principle that in false imprisonment, the restraint must be complete and total, otherwise it would not amount to false imprisonment. A partial restraint is actually a defence to false imprisonment."
+  },
+  {
+    "id": 32,
+    "question": "Volunti non fit injuria is a defence available to trespass to person",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Volunti non fit injuria (consent negates injury) is indeed a defence to trespass to person. The lecture notes list 'Consent' as one of the defences to trespass to person, expressed in the maxim 'volenti non fit injuria.' An Engineer who consents to the interference of his/her person cannot complain of trespass to person."
+  },
+  {
+    "id": 33,
+    "question": "..............is an intentional or unintentional act of bringing offensive object into the property of another",
+    "options": [
+      "Strict liability",
+      "Negligence",
+      "Vicarious liability",
+      "Tortious liability"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Strict liability (from Rylands v. Fletcher) applies when an engineer, whether intentionally or unintentionally, brings something that causes damage to another person's property. If an engineer brings anything onto their land knowing that if it escapes it will cause damage, and it does escape and cause damage, the engineer will be strictly liable."
+  },
+  {
+    "id": 34,
+    "question": "Res ipsa loquitor is interpreted to mean",
+    "options": [
+      "Thing speaks for itself",
+      "many things speak for them selves",
+      "all of the above",
+      "none of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Res ipsa loquitur means 'Thing or situation speaks for itself.' It is an express way of proof of negligence, available where the victim of an accident may not be able to prove how the accident happened. It shifts the burden of proof to the defendant (Ifeagwu v. Tambasi)."
+  },
+  {
+    "id": 35,
+    "question": "An Engineer who wants to proof the tort of negligence must prove all the following except",
+    "options": [
+      "Consent",
+      "Duty of care",
+      "Breach of duty of care",
+      "Damage"
+    ],
+    "correctAnswer": 0,
+    "explanation": "To prove negligence, the plaintiff must prove: (1) that the defendant owes a duty of care, (2) that the defendant breached that duty of care, and (3) that there was damage resulting from the breach (Donoghue v. Stevenson). 'Consent' is NOT an element to prove — rather, it is a defence to negligence (volenti non fit injuria)."
+  },
+  {
+    "id": 36,
+    "question": "All but one is a locus classical case on the tort of negligence",
+    "options": [
+      "Donoghue v stevenson",
+      "Aigoro v, Anabuwa",
+      "Bird v jone",
+      "jone v Bird"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Donoghue v. Stevenson is THE locus classicus (leading) case on the tort of negligence. It established the duty of care principle. The question asks for the one that IS a locus classical case, making Donoghue v. Stevenson the correct answer. Bird v. Jones relates to false imprisonment, and Aigoro v. Anebunwa relates to false imprisonment using police authority."
+  },
+  {
+    "id": 37,
+    "question": "All but one is not an element of engineering contract",
+    "options": [
+      "creation of contractual relationship",
+      "Offer",
+      "intention to create legal relation",
+      "capacity"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The elements of a valid engineering contract include Offer, Acceptance, Consideration, Intention to create legal relations, and Capacity. 'Creation of contractual relationship' is not listed as an element — it is the result/outcome of having all the valid elements in place, not an element itself."
+  },
+  {
+    "id": 38,
+    "question": "An invitation to make an offer is..............",
+    "options": [
+      "invitation to treat",
+      "offer",
+      "invitation to offer",
+      "invitation to accept"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An invitation to treat is an invitation to make an offer. It is not an offer itself, but rather an indication that a party is willing to receive offers. This is a fundamental concept in contract law distinguishing between actual offers and mere invitations for others to make offers."
+  },
+  {
+    "id": 39,
+    "question": "All but one is a form of contract that must be signed sealed and delivered",
+    "options": [
+      "Formal contract",
+      "Informal contract",
+      "Former contract",
+      "Informer contract"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A formal contract is one that must be signed, sealed, and delivered (also known as a contract under seal or a deed). An informal contract (also called a simple contract) does not require these formalities. 'Former contract' and 'Informer contract' are not recognized legal terms."
+  },
+  {
+    "id": 40,
+    "question": "The price at which the promise of an engineer is bought is called........",
+    "options": [
+      "Consideration",
+      "market price",
+      "conditional price",
+      "All of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Consideration is the price at which the promise of another is bought. It is an essential element of a valid contract. The lecture notes state that consideration need not be adequate but must be sufficient, meaning the law does not require equal value but there must be something of value exchanged."
+  },
+  {
+    "id": 41,
+    "question": "All but One is not a valid contract of a minor",
+    "options": [
+      "loan",
+      "Beneficial contract",
+      "Apprentice",
+      "all of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Minors (persons below 18 years) have limited capacity to contract. Beneficial contracts and apprenticeship contracts are valid contracts that a minor can enter into because they are for the minor's benefit. A loan contract is NOT a valid contract of a minor. The question asks which is NOT valid — making 'loan' the correct answer."
+  },
+  {
+    "id": 42,
+    "question": "A person below the age of 17 years 11 months can validly enter into a contract",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Under Nigerian law (S. 20 CAMA), a person below 18 years of age lacks the capacity to form contracts generally. A person below 17 years 11 months is under 18, so they cannot validly enter into contracts (except for beneficial contracts like apprenticeship). The law sets the age of majority at 18 years."
+  },
+  {
+    "id": 43,
+    "question": "A conditional acceptance is a valid acceptance",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A conditional acceptance is NOT a valid acceptance. Acceptance must be direct and go straight to the terms of the offer — it must be absolute and unconditional. A conditional acceptance amounts to a counter-offer, which destroys the original offer."
+  },
+  {
+    "id": 44,
+    "question": "An offer can be made to the wholeworld",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An offer can indeed be made to the whole world, as established in the landmark case of Carlill v. Carbolic Smoke Ball Company. In that case, the company's advertisement offering £100 to anyone who contracted influenza after using their smoke ball was held to be a valid offer to the whole world."
+  },
+  {
+    "id": 45,
+    "question": "Consideration must be past",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Consideration must NOT be past. Past consideration is generally not valid consideration in contract law. Consideration must be present or future — it must be something given in exchange for the promise at the time of the contract or to be given in the future."
+  },
+  {
+    "id": 46,
+    "question": "Consideration need not be adequate but",
+    "options": [
+      "Sufficient",
+      "Cogent",
+      "reasonable",
+      "all of the above"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The lecture notes explicitly state that 'consideration need not be adequate but must be sufficient.' This means the law does not require consideration to be of equal value to what is being exchanged, but there must be something of recognised legal value moving from the promisee."
+  },
+  {
+    "id": 47,
+    "question": "Acceptance must not be communicated to the offerror",
+    "options": [
+      "False",
+      "True"
+    ],
+    "correctAnswer": 0,
+    "explanation": "This statement is False. As a general rule, acceptance MUST be communicated to the offeror for it to be valid. An acceptance that is not communicated generally has no legal effect. The exception is in unilateral contracts where performance of the act may constitute communication."
+  },
+  {
+    "id": 48,
+    "question": "Acceptance must be communicated to offeror in unilateral contract",
+    "options": [
+      "True",
+      "false"
+    ],
+    "correctAnswer": 0,
+    "explanation": "In a unilateral contract, acceptance must be communicated to the offeror, though this communication is typically through the performance of the required act. As established in Carlill v. Carbolic, performing the conditions of the offer constitutes both acceptance and its communication."
+  },
+  {
+    "id": 49,
+    "question": "Carlil v carbolic represents offer to the whole world",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Carlill v. Carbolic Smoke Ball Company is the landmark case that established the principle that an offer can be made to the whole world. The company advertised its product with a reward offer to anyone who used it and still contracted influenza, and the court held this to be a valid offer to the whole world."
+  },
+  {
+    "id": 50,
+    "question": "Carlil v carbolic is case on example of unilateral contract",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Carlill v. Carbolic is indeed an example of a unilateral contract. In a unilateral contract, one party makes a promise in exchange for the performance of an act by another party. In this case, the Carbolic Smoke Ball Company promised £100 to anyone who performed the act of using their product and still contracted influenza."
+  },
+  {
+    "id": 51,
+    "question": "Acceptance must be direct and go straight to the term of offer",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Acceptance must be direct and go straight to the terms of the offer. This means acceptance must be unconditional and must correspond exactly with the terms of the offer (the 'mirror image' rule). Any variation or condition attached to the acceptance would make it a counter-offer rather than a valid acceptance."
+  },
+  {
+    "id": 52,
+    "question": "Acceptance in ignorance of offer constitutes a valid acceptance in the eyes of the law",
+    "options": [
+      "false",
+      "true"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Acceptance in ignorance of an offer does NOT constitute a valid acceptance. A person must be aware of the offer before they can accept it. If someone performs an act without knowing that an offer existed, their action cannot be treated as acceptance because there was no intention to accept the offer."
+  }
+]
