@@ -22,7 +22,7 @@ function getPreparednessData(percentage: number) {
       ringColor: "stroke-emerald-500",
       trackColor: "stroke-emerald-500/15",
       icon: Trophy,
-      message: "Outstanding! You have an excellent grasp of Engineering Law. You're well-prepared for any examination.",
+      message: "Outstanding! You have an excellent grasp of Engineering Law. You're well-prepared for the examination.",
     };
   } else if (percentage >= 70) {
     return {
@@ -74,7 +74,7 @@ export default function Quiz() {
     // Load custom questions
     const customQuestionsStr = localStorage.getItem("customQuestions");
     let allQuestions = [...baseQuestions] as Question[];
-    
+
     if (customQuestionsStr) {
       try {
         const customQs = JSON.parse(customQuestionsStr) as Question[];
@@ -84,8 +84,11 @@ export default function Quiz() {
       }
     }
 
+    // Shuffle all questions
+    const shuffledBaseQuestions = shuffleArray([...allQuestions]);
+
     // Prepare questions with shuffled options
-    const preparedQuestions: ShuffledQuestion[] = allQuestions.map((q) => {
+    const preparedQuestions: ShuffledQuestion[] = shuffledBaseQuestions.map((q) => {
       const correctOptionText = q.options[q.correctAnswer];
       return {
         ...q,
@@ -128,12 +131,13 @@ export default function Quiz() {
   };
 
   const resetQuiz = () => {
-    // Optionally reshuffle here
-    const reshuffled = questions.map(q => ({
+    // Reshuffle questions and their options
+    const reshuffledQuestions = shuffleArray(questions.map(q => ({
       ...q,
       shuffledOptions: shuffleArray([...q.options])
-    }));
-    setQuestions(reshuffled);
+    })));
+    
+    setQuestions(reshuffledQuestions);
     setCurrentIndex(0);
     setScore(0);
     setIsFinished(false);
@@ -298,7 +302,7 @@ export default function Quiz() {
             {currentQuestion.shuffledOptions.map((option, idx) => {
               const isSelected = selectedAnswer === option;
               const isCorrect = option === currentQuestion.correctOptionText;
-              
+
               let optionStateClass = "bg-secondary/50 hover:bg-secondary border-transparent";
               if (selectedAnswer) {
                 if (isCorrect) {
@@ -364,13 +368,13 @@ export default function Quiz() {
                 onClick={handleSkip}
                 className="flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-muted-foreground hover:bg-secondary transition-colors"
               >
-              <SkipForward className="w-5 h-5" />
-              Skip Question
+                <SkipForward className="w-5 h-5" />
+                Skip Question
               </button>
             ) : (
               <div /> // Spacer
             )}
-            
+
             <button
               onClick={handleNext}
               disabled={!selectedAnswer}
