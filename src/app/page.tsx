@@ -20,7 +20,7 @@ export default function Home() {
       </main>
 
       <footer className="py-6 text-center text-sm text-muted-foreground border-t border-border/50">
-        <p> © Nutodimos. Built for BUL 506 CBT Examination.</p>
+        <p> © Nutodimos 2026. Built for BUL 506 CBT Examination.</p>
       </footer>
     </div>
   );
