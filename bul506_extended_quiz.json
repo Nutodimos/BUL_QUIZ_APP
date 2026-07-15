@@ -699,5 +699,331 @@
     ],
     "correctAnswer": 0,
     "explanation": "Insane and drunken persons, like infants (minors), are bound to pay a reasonable price for necessaries — goods and services essential for their sustenance and wellbeing. This is because the law protects suppliers who provide essential items to persons who lack full contractual capacity, while also protecting the vulnerable individuals from exploitation."
+  },
+  {
+    "id": 113,
+    "question": "One of the characteristics of customary law is",
+    "options": [
+      "Mirror of acceptable usage",
+      "Codified in the constitution",
+      "Passed by the National Assembly",
+      "Enforced by the Police"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Customary law is unwritten and must be a mirror of acceptable usage in the community."
+  },
+  {
+    "id": 114,
+    "question": "The enforcement of which that may be backed by sanction is",
+    "options": [
+      "Morality",
+      "Law",
+      "Custom",
+      "Religion"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Law is a set of rules enforced by the state, backed by sanctions."
+  },
+  {
+    "id": 115,
+    "question": "Law passed by the Nigeria legislators on the ways and manner engineering business should be conducted is",
+    "options": [
+      "COREN Act",
+      "Engineering Decree",
+      "Council Act",
+      "Engineers Bill"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The COREN Act is the law passed to regulate engineering business in Nigeria."
+  },
+  {
+    "id": 116,
+    "question": "Law made by the Federal military government to regulate engineering business in Nigeria is called",
+    "options": [
+      "Act",
+      "Decree",
+      "Edict",
+      "Bye-law"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Laws made by the Federal military government are referred to as Decrees."
+  },
+  {
+    "id": 117,
+    "question": "An engineer can prove custom of his profession by any of the following:",
+    "options": [
+      "Calling president of COREN",
+      "Showing his ID card",
+      "Reading a textbook",
+      "Asking a lawyer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Custom of a profession can be proven by calling expert witnesses or leaders in that profession, such as the President of COREN."
+  },
+  {
+    "id": 118,
+    "question": "The principle that customary law must be a mirror of acceptable usage is decided in the case of",
+    "options": [
+      "Owonyi v. omotosho",
+      "Carlill v. Carbolic",
+      "R v. Clarke",
+      "Donoghue v. Stevenson"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Owonyi v. Omotosho is a leading case establishing that customary law must mirror accepted usage."
+  },
+  {
+    "id": 119,
+    "question": "Court of Appeal and High Court are court of coordinate jurisdiction",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "They are not of coordinate jurisdiction; the Court of Appeal is higher than the High Court."
+  },
+  {
+    "id": 120,
+    "question": "State High and Federal High court are courts of coordinate jurisdiction",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "State High Courts and the Federal High Court share coordinate (equal) jurisdiction, though they handle different subject matters."
+  },
+  {
+    "id": 121,
+    "question": "Federal High court and National Industrial court are court of coordinate jurisidiction",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Yes, the Federal High Court and National Industrial Court are of coordinate jurisdiction."
+  },
+  {
+    "id": 122,
+    "question": "Shariah court of Appeal and Customary court of Appeal are not courts of coordinate jurisdiction",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "They ARE courts of coordinate jurisdiction (at the same level in the hierarchy)."
+  },
+  {
+    "id": 123,
+    "question": "Magistrate, Upper or Area and District cours are courts of Record",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "These are inferior courts and typically NOT courts of record."
+  },
+  {
+    "id": 124,
+    "question": "A court is a court of record because it is not mentioned in the constitution",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Being a court of record is usually explicitly stated in the Constitution or the establishing statute."
+  },
+  {
+    "id": 125,
+    "question": "The decision of court of Appeal on Engineering matter binds the Supreme court",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The Supreme Court is the highest court and binds all other courts; it is not bound by the Court of Appeal."
+  },
+  {
+    "id": 126,
+    "question": "Tortious liability of an engineer may be inform of all of the following except",
+    "options": [
+      "Negligence",
+      "Trespass",
+      "Nuisance",
+      "partial false imprisonment"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Partial false imprisonment is not a standard form of tortious liability for engineers."
+  },
+  {
+    "id": 127,
+    "question": "..............is an intentional or unintentional act of bringing offensive object into the property of another",
+    "options": [
+      "Strict liability",
+      "Trespass to land",
+      "Nuisance",
+      "Negligence"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Based on the provided material, strict liability (e.g., Rylands v Fletcher) involves bringing something onto land that causes offense/damage if it escapes."
+  },
+  {
+    "id": 128,
+    "question": "An invitation to make an offer is..............",
+    "options": [
+      "invitation to treat",
+      "acceptance",
+      "counter-offer",
+      "conditional offer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "An invitation to treat is merely an invitation to negotiate or make an offer, not an offer itself."
+  },
+  {
+    "id": 129,
+    "question": "All but one is a form of contract that must be signed sealed and delivered",
+    "options": [
+      "Simple contract",
+      "Oral contract",
+      "Implied contract",
+      "Formal contract"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A formal contract (or deed) is one that must be signed, sealed, and delivered."
+  },
+  {
+    "id": 130,
+    "question": "The price at which the promise of an engineer is bought is called........",
+    "options": [
+      "Acceptance",
+      "Offer",
+      "Consideration",
+      "Capacity"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Consideration is the price (or value) given in exchange for a promise."
+  },
+  {
+    "id": 131,
+    "question": "All but One is not a valid contract of a minor",
+    "options": [
+      "Beneficial contract of service",
+      "Contract for necessaries",
+      "loan",
+      "Apprenticeship"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A minor cannot enter into a valid contract for a loan. Contracts for necessaries and beneficial contracts of service are exceptions."
+  },
+  {
+    "id": 132,
+    "question": "A person below the age of 17 years 11 months can validly enter into a contract",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Generally, a minor (under 18) cannot enter into a valid contract, except for necessaries."
+  },
+  {
+    "id": 133,
+    "question": "A conditional acceptance is a valid acceptance",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A conditional acceptance is typically a counter-offer, not a valid acceptance."
+  },
+  {
+    "id": 134,
+    "question": "An offer can be made to the whole world",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As established in Carlill v. Carbolic Smoke Ball Co., an offer can be made to the whole world."
+  },
+  {
+    "id": 135,
+    "question": "Consideration must be past",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Past consideration is generally not valid consideration."
+  },
+  {
+    "id": 136,
+    "question": "Consideration need not be adequate but",
+    "options": [
+      "Equal",
+      "Sufficient",
+      "Exact",
+      "More than the offer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Consideration must be sufficient (have some value in the eyes of the law) but need not be adequate (equal value)."
+  },
+  {
+    "id": 137,
+    "question": "Acceptance must not be communicated to the offerror",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Acceptance must generally be communicated to the offeror, except in specific cases like unilateral contracts."
+  },
+  {
+    "id": 138,
+    "question": "Acceptance must be communicated to offeror in unilateral contract",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Based on the provided quiz material."
+  },
+  {
+    "id": 139,
+    "question": "Carlil v carbolic represents offer to the whole world",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Carlill v. Carbolic Smoke Ball Co. is the classic case establishing that an offer can be made to the whole world."
+  },
+  {
+    "id": 140,
+    "question": "Carlil v carbolic is case on example of unilateral contract",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Yes, it is the leading case on unilateral contracts."
+  },
+  {
+    "id": 141,
+    "question": "Acceptance must be direct and go straight to the term of offer",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Acceptance must perfectly match the terms of the offer (the mirror image rule)."
+  },
+  {
+    "id": 142,
+    "question": "Acceptance in ignorance of offer constitutes a valid acceptance in the eyes of the law",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A person cannot accept an offer they do not know about."
   }
 ]

@@ -68,11 +68,11 @@ function CategorySelector({ onSelect }: { onSelect: (mode: QuizMode) => void }) 
                 <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-amber-500 group-hover:translate-x-1 transition-all shrink-0" />
               </div>
               <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">
-                112 comprehensive questions including contract law, torts, company law, employment law, and COREN Act. Full exam preparation.
+                142 comprehensive questions including contract law, torts, company law, employment law, and COREN Act. Full exam preparation.
               </p>
               <div className="flex items-center gap-3 mt-3">
                 <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-500 text-xs font-medium">
-                  112 Questions
+                  142 Questions
                 </span>
                 <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-secondary text-muted-foreground text-xs font-medium">
                   Untimed
